@@ -1,0 +1,94 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  font-family: roboto;
+}
+
+header {
+  font-family: shrikhand;
+}
+header .fas.fa-arrow-left {
+  font-size: 165%;
+  position: absolute;
+  top: 9px;
+  left: 30px;
+  color: black;
+}
+header h1 {
+  text-align: center;
+}
+header .pic {
+  width: 100%;
+}
+
+main {
+  background-color: #e7e7e7;
+  border-radius: 54px;
+  bottom: 76px;
+}
+main section {
+  background-color: #e7e7e7;
+}
+main h2 {
+  font-family: shrikhand;
+  font-size: 2em;
+  position: relative;
+  top: 34px;
+  left: 26px;
+  margin-bottom: 50px;
+}
+main .far.fa-heart {
+  position: absolute;
+  bottom: 99px;
+  font-size: 2em;
+  right: 77px;
+  margin-bottom: 20px;
+}
+main h3 {
+  color: gray;
+  margin-top: 10px;
+}
+main div {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  border-radius: 12px;
+}
+main div .dishName {
+  width: 100%;
+}
+main button {
+  background-color: #FF79DA;
+  text-align: center;
+  margin: auto;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 13px;
+  border-radius: 19px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px 20px 10px 20px;
+}
+footer p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+footer .footerLogo {
+  font-family: shrikhand;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+footer div p {
+  margin-left: 12px;
+}/*# sourceMappingURL=styles.css.map */
