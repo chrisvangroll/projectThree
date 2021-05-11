@@ -26,6 +26,11 @@ main {
   background-color: #e7e7e7;
   border-radius: 54px;
   bottom: 76px;
+  position: relative;
+}
+main .restaurantName {
+  display: flex;
+  justify-content: space-between;
 }
 main section {
   background-color: #e7e7e7;
@@ -39,27 +44,30 @@ main h2 {
   margin-bottom: 50px;
 }
 main .far.fa-heart {
-  position: absolute;
-  bottom: 99px;
   font-size: 2em;
-  right: 77px;
-  margin-bottom: 20px;
+  margin-top: 65px;
+  margin-right: 30px;
 }
 main h3 {
   color: gray;
   margin-top: 10px;
+  margin-left: 12px;
 }
-main div {
+main .menuItem {
   background-color: white;
   display: flex;
-  width: 100%;
+  width: 96%;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin: auto;
   margin-bottom: 22px;
   border-radius: 12px;
 }
-main div .dishName {
+main .menuItem .dishName {
   width: 100%;
+}
+main .menuItem p {
+  margin-left: 12px;
 }
 main button {
   background-color: #FF79DA;

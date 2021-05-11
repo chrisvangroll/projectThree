@@ -2,12 +2,15 @@ $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $fontOne: shrikhand;
-$roboto: roboto;
+$fontTwo: roboto;
+@mixin marginLeft{
+    margin-left: 12px;
+}
 body{
     max-width: 1200px;
     margin: auto;
     position: relative;
-    font-family: $roboto;
+    font-family: $fontTwo;
 }
 header{
     font-family: $fontOne;
@@ -30,6 +33,11 @@ main{
     background-color: #e7e7e7;
     border-radius: 54px;
     bottom: 76px;
+    position: relative;
+    .restaurantName{
+        display: flex;
+        justify-content: space-between;
+    }
     section{
         background-color: #e7e7e7;
     }
@@ -42,26 +50,29 @@ main{
         margin-bottom: 50px;
     }
     .far.fa-heart{
-        position: absolute;
-        bottom: 99px;
         font-size: 2em;
-        right: 77px;
-        margin-bottom: 20px;
+        margin-top: 65px;
+        margin-right: 30px;
     }
     h3{
         color:gray;
         margin-top: 10px;
+        @include marginLeft();
     }
-    div{
+    .menuItem{
         background-color: white;
         display: flex;
-        width: 100%;
+        width: 96%;
         flex-flow: row wrap;
         justify-content: space-between;
+        margin: auto;
         margin-bottom: 22px;
         border-radius: 12px;
         .dishName{
             width: 100%;
+        }
+        p{
+            @include marginLeft();
         }
     }
     button{
