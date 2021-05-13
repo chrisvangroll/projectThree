@@ -4,56 +4,111 @@ body {
   position: relative;
   font-family: roboto;
 }
-
-header {
+body .sectionOne {
+  background-color: #e7e7e7;
+}
+body .sectionOne .location {
+  background-color: #d5d5d5;
+  display: flex;
+  justify-content: center;
+}
+body .sectionOne .location i {
+  margin: 17px;
+}
+body .sectionOne .discover {
+  text-align: center;
+  padding: 10px 0px 37px 10px;
+}
+body .sectionOne .discover h2 {
+  margin-bottom: 23px;
+}
+body .sectionOne .discover p {
+  margin: 0px;
+}
+body .sectionOne .discover button {
+  background-color: #FF79DA;
+  border: none;
+  padding: 13px;
+  border-radius: 19px;
+  margin-top: 21px;
+  color: white;
+  font-weight: 600;
+}
+body .sectionTwo div {
+  background-color: #e7e7e7;
+  display: flex;
+  font-weight: 600;
+  width: 90%;
+  margin: auto;
+  border-radius: 25px;
+  margin-bottom: 31px;
+  padding: 6px;
+}
+body .sectionTwo div .numbers {
+  background-color: #9356DC;
+  border-radius: 16px;
+  padding: 5px 10px;
+  color: white;
+  position: relative;
+  bottom: 5px;
+  right: 20px;
+}
+body .sectionTwo div i {
+  margin: 17px 30px 0px 0px;
+  color: gray;
+}
+body .sectionTwo div .fas.fa-store {
+  color: #9356DC;
+}
+body header {
   font-family: shrikhand;
 }
-header .fas.fa-arrow-left {
+body header .fas.fa-arrow-left {
   font-size: 165%;
   position: absolute;
   top: 9px;
   left: 30px;
   color: black;
 }
-header h1 {
+body header h1 {
   text-align: center;
+  margin-bottom: 6px;
 }
-header .pic {
+body header .pic {
   width: 100%;
 }
-
-main {
+body main {
   background-color: #e7e7e7;
-  border-radius: 54px;
+  border-radius: 50px 50px 0px 0px;
   bottom: 76px;
   position: relative;
 }
-main .restaurantName {
+body main .restaurantName {
   display: flex;
   justify-content: space-between;
 }
-main section {
+body main section {
   background-color: #e7e7e7;
 }
-main h2 {
+body main h2 {
   font-family: shrikhand;
   font-size: 2em;
   position: relative;
-  top: 34px;
+  top: 22px;
   left: 26px;
   margin-bottom: 50px;
 }
-main .far.fa-heart {
+body main .far.fa-heart {
   font-size: 2em;
-  margin-top: 65px;
+  margin-top: 56px;
   margin-right: 30px;
 }
-main h3 {
+body main h3 {
   color: gray;
   margin-top: 10px;
   margin-left: 12px;
 }
-main .menuItem {
+body main .menuItem {
   background-color: white;
   display: flex;
   width: 96%;
@@ -61,42 +116,57 @@ main .menuItem {
   justify-content: space-between;
   margin: auto;
   margin-bottom: 22px;
-  border-radius: 12px;
+  border-radius: 18px;
+  font-weight: 600;
+  padding: 10px 0px;
 }
-main .menuItem .dishName {
+body main .menuItem .dishName {
   width: 100%;
 }
-main .menuItem p {
-  margin-left: 12px;
+body main .menuItem .dishSubliner {
+  font-weight: 300;
 }
-main button {
-  background-color: #FF79DA;
-  text-align: center;
-  margin: auto;
-  width: 22%;
+body main .menuItem p {
+  margin: 3px 12px;
+}
+body main .orderDiv {
+  background-color: #e7e7e7;
+  height: 115px;
   display: flex;
   justify-content: center;
+}
+body main .orderDiv button {
+  background-color: #FF79DA;
+  width: 145px;
   border: none;
   padding: 13px;
   border-radius: 19px;
+  margin-top: 21px;
+  color: white;
+  font-weight: 600;
 }
-
-footer {
+body main span {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 4px;
+}
+body footer {
   background-color: black;
   color: white;
   padding: 15px 20px 10px 20px;
+  position: relative;
+  bottom: 75px;
 }
-footer p {
+body footer p {
   margin-top: 0px;
   margin-bottom: 10px;
 }
-footer .footerLogo {
+body footer .footerLogo {
   font-family: shrikhand;
 }
-footer div {
+body footer div {
   display: flex;
   flex-direction: row;
 }
-footer div p {
+body footer div p {
   margin-left: 12px;
 }/*# sourceMappingURL=styles.css.map */
