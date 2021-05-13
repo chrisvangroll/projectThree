@@ -60,22 +60,46 @@ body{
         }
         
     }
-    // .sectionThree{
-    //     div{
-    //         width: 90%;
-    //         margin: auto;
-    //         .imgContainer{
-    //             margin: 0;
-    //             img{
-    //                 padding;
-    //                 width: 500px;
-    //             }
-    //         }
-    //     }
+    .sectionThree{
+        background-color: $bkgroundcolor;
+        .restaurantCard{
+            width: 90%;
+            margin: auto;
+            position: relative;
+            img{
+                width: 100%;
+                border-radius: 15px;
+            } 
+
+            .new{
+                position: absolute;
+                color: green;
+                background-color: $tertiary;
+                padding: 6px 19px;
+                top: 80%;
+                left: 50%;
+            }
+        }
+
+        .restaurantInfo{
+                display: flex;
+                flex-wrap: column;
+                position: relative;
+                flex-direction: column;
+                background-color: white;
+            
+            i {
+                align-self: flex-end;
+                position: relative;
+                bottom: 63px;
+                right: 25px;
+            }
+        }
+        
         
         
       
-    // }
+    }
     //Menu Pages
     header{
         font-family: $fontOne;

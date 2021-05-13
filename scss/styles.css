@@ -60,6 +60,39 @@ body .sectionTwo div i {
 body .sectionTwo div .fas.fa-store {
   color: #9356DC;
 }
+body .sectionThree {
+  background-color: #e7e7e7;
+}
+body .sectionThree .restaurantCard {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+body .sectionThree .restaurantCard img {
+  width: 100%;
+  border-radius: 15px;
+}
+body .sectionThree .restaurantCard .new {
+  position: absolute;
+  color: green;
+  background-color: #99E2D0;
+  padding: 6px 19px;
+  top: 80%;
+  left: 50%;
+}
+body .sectionThree .restaurantInfo {
+  display: flex;
+  flex-wrap: column;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+}
+body .sectionThree .restaurantInfo i {
+  align-self: flex-end;
+  position: relative;
+  bottom: 63px;
+  right: 25px;
+}
 body header {
   font-family: shrikhand;
 }
