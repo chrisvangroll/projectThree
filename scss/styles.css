@@ -63,14 +63,21 @@ body .sectionTwo div .fas.fa-store {
 body .sectionThree {
   background-color: #e7e7e7;
 }
+body .sectionThree .restaurantHeader {
+  margin-left: 30px;
+  padding: 35px 0px 4px 21px;
+  font-size: 3.5em;
+}
 body .sectionThree .restaurantCard {
   width: 90%;
   margin: auto;
   position: relative;
 }
-body .sectionThree .restaurantCard img {
+body .sectionThree .restaurantCard .imageBox {
   width: 100%;
-  border-radius: 15px;
+  height: 0px;
+  border-radius: 32px 32px 0px 0px;
+  padding-top: 50%;
 }
 body .sectionThree .restaurantCard .new {
   position: absolute;
@@ -80,18 +87,32 @@ body .sectionThree .restaurantCard .new {
   top: 80%;
   left: 50%;
 }
-body .sectionThree .restaurantInfo {
+body .sectionThree .restaurantCard .restaurantInfo {
   display: flex;
-  flex-wrap: column;
   position: relative;
   flex-direction: column;
   background-color: white;
+  padding: 0px 25px;
+  font-size: 2em;
 }
-body .sectionThree .restaurantInfo i {
+body .sectionThree .restaurantCard .restaurantInfo i {
   align-self: flex-end;
+  font-size: 2em;
+  margin-right: 50px;
+}
+body .sectionThree .restaurantCard .restaurantInfo h3 {
+  margin-bottom: 0px;
   position: relative;
-  bottom: 63px;
-  right: 25px;
+  top: 25px;
+}
+body .sectionThree .restaurantCard .restaurantInfo p {
+  margin-top: 0px;
+  font-weight: 400;
+  position: relative;
+  bottom: 25px;
+}
+body .homePageFooter {
+  position: static;
 }
 body header {
   font-family: shrikhand;

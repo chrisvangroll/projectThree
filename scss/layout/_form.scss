@@ -62,14 +62,29 @@ body{
     }
     .sectionThree{
         background-color: $bkgroundcolor;
+
+        .restaurantHeader{
+            margin-left: 30px;
+            padding: 35px 0px 4px 21px;
+            font-size: 3.5em;
+        }
+
         .restaurantCard{
             width: 90%;
             margin: auto;
             position: relative;
-            img{
+            .imageBox{
                 width: 100%;
-                border-radius: 15px;
-            } 
+                height: 0px;
+                border-radius: 32px 32px 0px 0px;
+                padding-top: 50%;
+                
+              
+            }
+            // img{
+            //     width: 100%;
+            //     height: 100%;
+            // } 
 
             .new{
                 position: absolute;
@@ -78,27 +93,44 @@ body{
                 padding: 6px 19px;
                 top: 80%;
                 left: 50%;
-            }
-        }
-
-        .restaurantInfo{
+            } 
+            .restaurantInfo{
                 display: flex;
-                flex-wrap: column;
                 position: relative;
                 flex-direction: column;
                 background-color: white;
+                padding: 0px 25px;
+                font-size: 2em;
             
-            i {
-                align-self: flex-end;
-                position: relative;
-                bottom: 63px;
-                right: 25px;
+                i {
+                    align-self: flex-end;
+                    font-size: 2em;
+                    margin-right: 50px;
+                }
+
+                h3{
+                    margin-bottom: 0px;
+                    position: relative;
+                    top: 25px;
+                }
+
+                p{
+                    margin-top: 0px;
+                    font-weight: 400;
+                    position: relative;
+                    bottom: 25px;
+                }
             }
+        
+            
+            
+          
+        
         }
         
-        
-        
-      
+    }
+    .homePageFooter{
+        position: static;
     }
     //Menu Pages
     header{
