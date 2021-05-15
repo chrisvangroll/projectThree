@@ -3,6 +3,7 @@ body {
   margin: auto;
   position: relative;
   font-family: roboto;
+  font-size: 4vw;
 }
 body .sectionOne {
   background-color: #e7e7e7;
@@ -13,14 +14,14 @@ body .sectionOne .location {
   justify-content: center;
 }
 body .sectionOne .location i {
-  margin: 17px;
+  margin: 4vw 4vw 0vw 0vw;
 }
 body .sectionOne .discover {
   text-align: center;
-  padding: 10px 0px 37px 10px;
+  padding: 3vw 2vw 8vw 2vw;
 }
 body .sectionOne .discover h2 {
-  margin-bottom: 23px;
+  margin-bottom: 5vw;
 }
 body .sectionOne .discover p {
   margin: 0px;
@@ -28,11 +29,15 @@ body .sectionOne .discover p {
 body .sectionOne .discover button {
   background-color: #FF79DA;
   border: none;
-  padding: 13px;
-  border-radius: 19px;
-  margin-top: 21px;
+  padding: 2.5vw;
+  border-radius: 5vw;
+  margin-top: 6vw;
   color: white;
   font-weight: 600;
+  font-size: 0.8em;
+}
+body .sectionTwo h2 {
+  margin-left: 3vw;
 }
 body .sectionTwo div {
   background-color: #e7e7e7;
@@ -40,25 +45,27 @@ body .sectionTwo div {
   font-weight: 600;
   width: 90%;
   margin: auto;
-  border-radius: 25px;
-  margin-bottom: 31px;
-  padding: 6px;
+  border-radius: 5vw;
+  margin-bottom: 4vw;
 }
 body .sectionTwo div .numbers {
   background-color: #9356DC;
-  border-radius: 16px;
-  padding: 5px 10px;
+  border-radius: 6vw;
+  padding: 1vw 2vw;
   color: white;
   position: relative;
-  bottom: 5px;
-  right: 20px;
+  bottom: 1vw;
+  right: 2.5vw;
 }
 body .sectionTwo div i {
-  margin: 17px 30px 0px 0px;
+  margin: 5vw 3vw 0vw 1vw;
   color: gray;
 }
 body .sectionTwo div .fas.fa-store {
   color: #9356DC;
+}
+body .sectionTwo div p {
+  margin: 5vw 0vw 4vw 0vw;
 }
 body .sectionThree {
   background-color: #e7e7e7;

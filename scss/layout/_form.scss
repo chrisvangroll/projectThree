@@ -4,6 +4,7 @@ body{
     margin: auto;
     position: relative;
     font-family: $fontTwo;
+    font-size: 4vw;
     //Home Page
     .sectionOne{
         background-color: $bkgroundcolor;
@@ -12,14 +13,14 @@ body{
             display: flex;
             justify-content: center;
             i{
-                margin: 17px;
+                margin: 4vw 4vw 0vw 0vw;
             }
         }
         .discover{
             text-align: center;
-            padding: 10px 0px 37px 10px;
+            padding: 3vw 2vw 8vw 2vw;
             h2{
-                margin-bottom: 23px;
+                margin-bottom: 5vw;
             }
             p{
                 margin: 0px;
@@ -31,31 +32,37 @@ body{
         }
     }
     .sectionTwo{
+        h2{
+            margin-left: 3vw;
+        }
         div{
             background-color: $bkgroundcolor;
             display: flex;
             font-weight: 600;
             width: 90%;
             margin: auto;
-            border-radius: 25px;
-            margin-bottom: 31px;
-            padding: 6px;
+            border-radius: 5vw;
+            margin-bottom: 4vw;
+           
             .numbers{
-                background-color: $primary;
-                border-radius: 16px;
-                padding: 5px 10px;
+                background-color: #9356DC;
+                border-radius: 6vw;
+                padding: 1vw 2vw;
                 color: white;
                 position: relative;
-                bottom: 5px;
-                right: 20px;
+                bottom: 1vw;
+                right: 2.5vw;
             }
 
             i{
-                margin: 17px 30px 0px 0px;
+                margin: 5vw 3vw 0vw 1vw;
                 color: gray;
             }
             .fas.fa-store{
                 color: $primary;
+            }
+            p{
+                margin: 5vw 0vw 4vw 0vw;
             }
         }
         
