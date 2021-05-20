@@ -81,6 +81,8 @@ body{
             margin: auto;
             position: relative;
             margin-bottom: 5vw;
+            text-decoration: none;
+            color: black;
 
             .imageBox{
                 width: 100%;
@@ -173,9 +175,7 @@ body{
             display: flex;
             justify-content: space-between;
         }
-        section{
-            background-color: $bkgroundcolor;
-        }
+        
         h2{
             font-family: shrikhand;
             font-size: 2em;
@@ -194,27 +194,66 @@ body{
             margin-top: 10px;
             @include marginLeft();
         }
-        .menuItem{
+        .menuContainer{
             background-color: white;
             display: flex;
-            width: 96%;
-            flex-flow: row wrap;
-            justify-content: space-between;
             margin: auto;
-            margin-bottom: 22px;
-            border-radius: 18px;
-            font-weight: 600;
-            padding: 10px 0px;
-            .dishName{
-                width: 100%;
+            margin-bottom: 5vw;
+            border-radius: 4vw;
+            width: 97%;
+        
+            .menuItem{
+                
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                font-weight: 600;
+                padding: 2.5vw 1vw 2.5vw 2vw;
 
+                .dishName{
+                    width: 100%;
+
+                }
+                .dishSubliner{
+                    font-weight: 300;
+                }
+                p{
+                    margin: 3px 12px;
+                }
             }
-            .dishSubliner{
-                font-weight: 300;
+            .greenCheck{
+                background-color: $tertiary;
+                text-align: center;
+                transform: scale(0,1);
+                border-radius: 0vw 4vw 4vw 0vw;
+
+                .fas.fa-check{
+                    color: $tertiary;
+                    background-color: white;
+                    color: #99E2D0;
+                    border-radius: 4vw;
+                    padding: .8vw;
+                    margin-top: 4vw;
+                    font-size: 3.5vw;
+                }
             }
-            p{
-                margin: 3px 12px;
+        &:hover{
+            cursor: pointer;
+
+            .greenCheck{
+                width: 15vw;
+               transform-origin: right 50%;
+               transform: scaleX(1); 
+               transition: transform 500ms ease-in-out;
+
+               .fas.fa-check{
+                   display: inline-block;
+                   transform: rotate(360deg);
+                   transition: transform 400ms;
+                   transition-delay: 100ms;
+               }
             }
+        }
         }
         .orderDiv{
             background-color: $bkgroundcolor;

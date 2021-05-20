@@ -80,6 +80,8 @@ body .sectionThree .restaurantCard {
   margin: auto;
   position: relative;
   margin-bottom: 5vw;
+  text-decoration: none;
+  color: black;
 }
 body .sectionThree .restaurantCard .imageBox {
   width: 100%;
@@ -153,9 +155,6 @@ body main .restaurantName {
   display: flex;
   justify-content: space-between;
 }
-body main section {
-  background-color: #e7e7e7;
-}
 body main h2 {
   font-family: shrikhand;
   font-size: 2em;
@@ -174,26 +173,59 @@ body main h3 {
   margin-top: 10px;
   margin-left: 12px;
 }
-body main .menuItem {
+body main .menuContainer {
   background-color: white;
   display: flex;
-  width: 96%;
+  margin: auto;
+  margin-bottom: 5vw;
+  border-radius: 4vw;
+  width: 90%;
+  padding: 2vw;
+}
+body main .menuContainer .menuItem {
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: auto;
-  margin-bottom: 22px;
-  border-radius: 18px;
   font-weight: 600;
   padding: 10px 0px;
 }
-body main .menuItem .dishName {
+body main .menuContainer .menuItem .dishName {
   width: 100%;
 }
-body main .menuItem .dishSubliner {
+body main .menuContainer .menuItem .dishSubliner {
   font-weight: 300;
 }
-body main .menuItem p {
+body main .menuContainer .menuItem p {
   margin: 3px 12px;
+}
+body main .menuContainer .greenCheck {
+  background-color: #99E2D0;
+  text-align: center;
+  transform: scale(0, 1);
+}
+body main .menuContainer .greenCheck .fas.fa-check {
+  color: #99E2D0;
+  background-color: white;
+  color: #99E2D0;
+  border-radius: 4vw;
+  padding: 0.8vw;
+  margin-top: 4vw;
+  font-size: 3.5vw;
+}
+body main .menuContainer:hover {
+  cursor: pointer;
+}
+body main .menuContainer:hover .greenCheck {
+  width: 15vw;
+  transform-origin: right 50%;
+  transform: scaleX(1);
+  transition: transform 500ms ease-in-out;
+}
+body main .menuContainer:hover .greenCheck .fas.fa-check {
+  display: inline-block;
+  transform: rotate(360deg);
+  transition: transform 400ms;
+  transition-delay: 100ms;
 }
 body main .orderDiv {
   background-color: #e7e7e7;
