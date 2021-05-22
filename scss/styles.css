@@ -94,11 +94,12 @@ body .sectionThree .restaurantCard .new {
   color: green;
   background-color: #99E2D0;
   padding: 1vw 6vw;
-  left: 394px;
   border-radius: 0.5vw;
-  z-index: 999;
-  bottom: 237px;
-  display: inline-block;
+  float: right;
+  z-index: 99;
+  position: relative;
+  top: 35px;
+  right: 40px;
 }
 body .sectionThree .restaurantCard .restaurantInfo {
   display: flex;
