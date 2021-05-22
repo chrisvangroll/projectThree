@@ -104,6 +104,10 @@ body{
                 position: relative;
                 top: 35px;
                 right: 40px;
+                @media (max-width: 700px){
+                    top: 17px;
+                    right: 20px;
+                }
             } 
 
             .restaurantInfo{
