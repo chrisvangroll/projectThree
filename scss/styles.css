@@ -90,13 +90,15 @@ body .sectionThree .restaurantCard .imageBox {
   padding-top: 50%;
 }
 body .sectionThree .restaurantCard .new {
-  position: absolute;
+  position: relative;
   color: green;
   background-color: #99E2D0;
   padding: 1vw 6vw;
-  top: 0vw;
-  left: 65vw;
+  left: 394px;
   border-radius: 0.5vw;
+  z-index: 999;
+  bottom: 237px;
+  display: inline-block;
 }
 body .sectionThree .restaurantCard .restaurantInfo {
   display: flex;
@@ -197,7 +199,7 @@ body main .menuContainer .dishName {
 }
 body main .menuContainer .dishSubliner {
   font-weight: 300;
-  width: 74%;
+  width: 68vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -244,6 +246,13 @@ body main .menuContainer:hover .greenCheck .fas.fa-check {
   transform: rotate(360deg);
   transition: transform 400ms;
   transition-delay: 100ms;
+}
+body main .menuContainer:hover .dishSubliner {
+  width: 58vw;
+}
+body main .menuContainer:hover .price {
+  position: relative;
+  left: 3.5vw;
 }
 body main .orderDiv {
   background-color: #e7e7e7;

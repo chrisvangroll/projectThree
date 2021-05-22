@@ -91,19 +91,18 @@ body{
                 padding-top: 50%;
               
             }
-            // img{
-            //     width: 100%;
-            //     height: 100%;
-            // } 
+    
 
             .new{
-                position: absolute;
+                position: relative;
                 color: green;
-                background-color: $tertiary;
+                background-color: #99E2D0;
                 padding: 1vw 6vw;
-                top: 0vw;
-                left: 65vw;
-                border-radius: .5vw;
+                left: 394px;
+                border-radius: 0.5vw;
+                z-index: 999;
+                bottom: 237px;
+                display: inline-block;
             } 
             .restaurantInfo{
                 display: flex;
@@ -224,7 +223,7 @@ body{
             }
             .dishSubliner{
                 font-weight: 300;
-                width: 74%;
+                width: 68vw;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -260,22 +259,30 @@ body{
                 font-size: 3.5vw;
             }
         }
-    &:hover{
-        cursor: pointer;
+        &:hover{
+            cursor: pointer;
 
-        .greenCheck{
-            width: 15vw;
-            transform-origin: right 50%;
-            transform: scaleX(1); 
-            transition: transform 500ms ease-in-out;
+            .greenCheck{
+                width: 15vw;
+                transform-origin: right 50%;
+                transform: scaleX(1); 
+                transition: transform 500ms ease-in-out;
 
-            .fas.fa-check{
-                display: inline-block;
-                transform: rotate(360deg);
-                transition: transform 400ms;
-                transition-delay: 100ms;
+                .fas.fa-check{
+                    display: inline-block;
+                    transform: rotate(360deg);
+                    transition: transform 400ms;
+                    transition-delay: 100ms;
+                }
             }
-        }
+
+            .dishSubliner{
+                width: 58vw;
+            }
+
+            .price{
+                position: relative;
+                left: 3.5vw;            }
         }
         }
         .orderDiv{
