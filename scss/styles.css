@@ -140,9 +140,6 @@ body .container .sectionThree .restaurantCard .restaurantInfo p {
   bottom: 4vw;
   margin-bottom: 1.5vw;
 }
-body .container .homePageFooter {
-  position: static;
-}
 body .container header {
   font-family: shrikhand;
 }
@@ -287,16 +284,26 @@ body .container main span {
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 4px;
 }
+body .homePageFooter {
+  position: relative;
+  bottom: 0px;
+}
 body footer {
   background-color: black;
   color: white;
   padding: 15px 20px 10px 20px;
   position: relative;
   bottom: 75px;
+  font-size: 0.7em;
+}
+@media (min-width: 1200px) {
+  body footer {
+    font-size: 20px;
+  }
 }
 body footer p {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 body footer .footerLogo {
   font-family: shrikhand;

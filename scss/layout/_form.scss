@@ -115,7 +115,6 @@ body{
                         right: 20px;
                     }
                 } 
-
                 .restaurantInfo{
                     display: flex;
                     position: relative;
@@ -149,9 +148,7 @@ body{
                 }            
             }         
         }
-        .homePageFooter{
-            position: static;
-        }
+        
 //Menu Pages
         header{
             font-family: $fontOne;
@@ -264,6 +261,7 @@ body{
                     font-size: 3.5vw;
                 }
             }
+
             &:hover{
                 cursor: pointer;
 
@@ -314,16 +312,26 @@ body{
         }
     }
 
+    .homePageFooter{
+        position: relative;
+        bottom: 0px;
+    }
+
     footer{
         background-color: black;
         color: white;
         padding: 15px 20px 10px 20px;
         position: relative;
         bottom: 75px;
+        font-size: .7em;
+        
+        @media (min-width: 1200px){
+            font-size: 20px;
+        }
 
         p{
             margin-top: 0px;
-            margin-bottom:10px;
+            margin-bottom: 17px;
         }
 
         .footerLogo{
