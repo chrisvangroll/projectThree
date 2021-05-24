@@ -267,6 +267,56 @@ body{
             .restaurantName{
                 display: flex;
                 justify-content: space-between;
+
+                .iconContainer{
+                    display: flex;
+                    justify-content: flex-end;
+                    position: relative;
+                    bottom: 5vw;
+                    right: 3vw;
+
+                    .fas.fa-heart {
+                        align-self: flex-end;
+                        font-size: 8vw;
+                        margin-right: 5vw;
+                        position: absolute;
+                        opacity: 0;
+                        color: linear-gradient($primary, $secondary);
+                        // transition: opacity 200ms;
+                        background: linear-gradient($primary, $secondary);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent ;
+
+                        &:hover{
+                            opacity: 1;
+                        }
+
+                        &:hover + .far.fa-heart{
+                            opacity: 0;
+                        }
+
+                        @media(min-width: 1000px){
+                        align-self: flex-end;
+                        font-size: 53px;
+                        margin-right: 10px;
+                        }
+                    }
+
+                        .far.fa-heart{
+                        align-self: flex-end;
+                        font-size: 8vw;
+                        margin-right: 5vw;
+                        opacity: 1;
+                        
+                        @media(min-width: 1000px){
+                        align-self: flex-end;
+                        font-size: 53px;
+                        margin-right: 10px;
+                        }
+                    }
+
+                }
+
             }
             
             h2{
@@ -278,18 +328,18 @@ body{
                 margin-bottom: 50px;
             }
             
-            .likedHeart{
-                font-size: 2em;
-                margin-top: 10vw;
-                margin-right: 6vw;
+            // .likedHeart{
+            //     font-size: 2em;
+            //     margin-top: 10vw;
+            //     margin-right: 6vw;
 
-                .far.fa-heart{
-                    color:black;
-                    &:hover{
-                        background-image: linear-gradient($primary, $secondary);
-                    }
-                }
-            }
+            //     .far.fa-heart{
+            //         color:black;
+            //         &:hover{
+            //             background-image: linear-gradient($primary, $secondary);
+            //         }
+            //     }
+            // }
             h3{
                 color:gray;
                 margin-top: 10px;
