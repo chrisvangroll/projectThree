@@ -78,18 +78,21 @@ body{
         }
         .sectionThree{
             background-color: $bkgroundcolor;
-            padding-bottom: 7vw;
+            padding-bottom: 15px;
             @media(min-width: 1000px){
                 display: flex;
                 flex-flow: row wrap;
+                padding-bottom: 10px;
             }
 
             .restaurantHeader{
-                padding: 7vw 0vw 0vw 5vw;
+                padding: 5vw 0vw 0vw 5vw;
                 font-size: 6.5vw;
 
                 @media(min-width: 1000px){
                     width: 100%;
+                    padding: 0px 0vw 0vw 43px;
+                    font-size: 64px;
                 }
             }
             
@@ -109,9 +112,10 @@ body{
                     height: 0px;
                     border-radius: 5vw 5vw 0px 0px;
                     padding-top: 50%;
+
                     @media(min-width: 1000px){
-                        width: 467px;
-                    }
+                    border-radius: 25px 25px 0px 0px;
+                    }    
                 }
         
 
@@ -126,11 +130,19 @@ body{
                     position: relative;
                     top: 35px;
                     right: 40px;
+                    margin-top: 0px;
                     @media (max-width: 700px){
                         top: 17px;
                         right: 20px;
                     }
-                } 
+                    @media (min-width: 1000px){
+                        padding: 10px 38px;
+                        top: 16px;
+                        right: 33px;
+                        font-size: 26px;
+                    }
+                }
+               
                 .restaurantInfo{
                     display: flex;
                     position: relative;
@@ -139,10 +151,14 @@ body{
                     padding: 0vw 3vw;
                     font-size: 4vw;
                     border-radius: 0 0 5vw 5vw;
+                    margin-bottom: 50px;
                     @media(min-width: 1000px){
                         padding: 1px 14px;
                         font-size: 30px;
+                        margin-bottom: 0px;
+                        border-radius: 0 0 25px 25px;
                     }
+
                     i {
                         align-self: flex-end;
                         font-size: 6vw;

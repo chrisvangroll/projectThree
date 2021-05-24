@@ -80,21 +80,24 @@ body .container .sectionTwo div p {
 }
 body .container .sectionThree {
   background-color: #e7e7e7;
-  padding-bottom: 7vw;
+  padding-bottom: 15px;
 }
 @media (min-width: 1000px) {
   body .container .sectionThree {
     display: flex;
     flex-flow: row wrap;
+    padding-bottom: 10px;
   }
 }
 body .container .sectionThree .restaurantHeader {
-  padding: 7vw 0vw 0vw 5vw;
+  padding: 5vw 0vw 0vw 5vw;
   font-size: 6.5vw;
 }
 @media (min-width: 1000px) {
   body .container .sectionThree .restaurantHeader {
     width: 100%;
+    padding: 0px 0vw 0vw 43px;
+    font-size: 64px;
   }
 }
 body .container .sectionThree .restaurantCard {
@@ -118,7 +121,7 @@ body .container .sectionThree .restaurantCard .imageBox {
 }
 @media (min-width: 1000px) {
   body .container .sectionThree .restaurantCard .imageBox {
-    width: 467px;
+    border-radius: 25px 25px 0px 0px;
   }
 }
 body .container .sectionThree .restaurantCard .new {
@@ -132,11 +135,20 @@ body .container .sectionThree .restaurantCard .new {
   position: relative;
   top: 35px;
   right: 40px;
+  margin-top: 0px;
 }
 @media (max-width: 700px) {
   body .container .sectionThree .restaurantCard .new {
     top: 17px;
     right: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  body .container .sectionThree .restaurantCard .new {
+    padding: 10px 38px;
+    top: 16px;
+    right: 33px;
+    font-size: 26px;
   }
 }
 body .container .sectionThree .restaurantCard .restaurantInfo {
@@ -147,11 +159,14 @@ body .container .sectionThree .restaurantCard .restaurantInfo {
   padding: 0vw 3vw;
   font-size: 4vw;
   border-radius: 0 0 5vw 5vw;
+  margin-bottom: 50px;
 }
 @media (min-width: 1000px) {
   body .container .sectionThree .restaurantCard .restaurantInfo {
     padding: 1px 14px;
     font-size: 30px;
+    margin-bottom: 0px;
+    border-radius: 0 0 25px 25px;
   }
 }
 body .container .sectionThree .restaurantCard .restaurantInfo i {
