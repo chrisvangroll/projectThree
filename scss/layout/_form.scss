@@ -9,7 +9,7 @@ body{
         margin: auto;
         position: relative;
         @media(min-width: 1000px){
-            font-size: 40px;
+            font-size: 30px;
         }
 //Home Page
         .sectionOne{
@@ -49,6 +49,10 @@ body{
                 margin: auto;
                 border-radius: 5vw;
                 margin-bottom: 4vw;
+                @media (min-width: 1000px) {
+                    border-radius: 26px;
+                    margin-bottom: 30px;
+                }
             
                 .numbers{
                     background-color: #9356DC;
@@ -58,17 +62,27 @@ body{
                     position: relative;
                     bottom: 1vw;
                     right: 2.5vw;
+                    @media (min-width: 1000px){
+                        padding: 10px 20px;
+                    }
                 }
 
                 i{
                     margin: 5vw 3vw 0vw 1vw;
                     color: gray;
+
+                    @media (min-width: 1000px){
+                        margin: 35px 3vw 0vw 10px;
+                    }
                 }
                 .fas.fa-store{
                     color: $primary;
                 }
                 p{
                     margin: 5vw 0vw 4vw 0vw;
+                    @media (min-width: 1000px){
+                        margin: 35px 0vw 10px 0vw;
+                    } 
                 }
             }
             

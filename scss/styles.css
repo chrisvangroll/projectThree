@@ -10,7 +10,7 @@ body .container {
 }
 @media (min-width: 1000px) {
   body .container {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 body .container .sectionOne {
@@ -56,6 +56,12 @@ body .container .sectionTwo div {
   border-radius: 5vw;
   margin-bottom: 4vw;
 }
+@media (min-width: 1000px) {
+  body .container .sectionTwo div {
+    border-radius: 26px;
+    margin-bottom: 30px;
+  }
+}
 body .container .sectionTwo div .numbers {
   background-color: #9356DC;
   border-radius: 6vw;
@@ -65,15 +71,30 @@ body .container .sectionTwo div .numbers {
   bottom: 1vw;
   right: 2.5vw;
 }
+@media (min-width: 1000px) {
+  body .container .sectionTwo div .numbers {
+    padding: 10px 20px;
+  }
+}
 body .container .sectionTwo div i {
   margin: 5vw 3vw 0vw 1vw;
   color: gray;
+}
+@media (min-width: 1000px) {
+  body .container .sectionTwo div i {
+    margin: 35px 3vw 0vw 10px;
+  }
 }
 body .container .sectionTwo div .fas.fa-store {
   color: #9356DC;
 }
 body .container .sectionTwo div p {
   margin: 5vw 0vw 4vw 0vw;
+}
+@media (min-width: 1000px) {
+  body .container .sectionTwo div p {
+    margin: 35px 0vw 10px 0vw;
+  }
 }
 body .container .sectionThree {
   background-color: #e7e7e7;
