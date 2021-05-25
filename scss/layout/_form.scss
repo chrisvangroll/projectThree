@@ -5,13 +5,10 @@ body{
     font-size: 4vw;
 
     .container{
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto;
         position: relative;
-        max-width: 1200px;
-        margin: auto;
-        position: relative;
-        @media(min-width: 1200px){
+        @media(min-width: 1000px){
             font-size: 40px;
         }
 //Home Page
@@ -286,6 +283,7 @@ body{
                         background: linear-gradient($primary, $secondary);
                         background-clip: text;
                         -webkit-text-fill-color: transparent ;
+                        cursor: pointer;
 
                         &:hover{
                             opacity: 1;
@@ -328,18 +326,6 @@ body{
                 margin-bottom: 50px;
             }
             
-            // .likedHeart{
-            //     font-size: 2em;
-            //     margin-top: 10vw;
-            //     margin-right: 6vw;
-
-            //     .far.fa-heart{
-            //         color:black;
-            //         &:hover{
-            //             background-image: linear-gradient($primary, $secondary);
-            //         }
-            //     }
-            // }
             h3{
                 color:gray;
                 margin-top: 10px;
@@ -357,9 +343,20 @@ body{
                 flex-flow: column wrap;
                 font-weight: 600;
                 padding-left: 2.5vw;
+
+                @media(min-width: 1000px){
+                    padding-left: 30px;
+                    align-content: space-between;
+                    margin-bottom: 48px;
+                    border-radius: 45px;
+                    height: 180px;
+                }
                 
                 .dishName{
-                    font-size: 1em;;
+                    font-size: 1em;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
 
                 .dishSubliner{
@@ -368,11 +365,19 @@ body{
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+
+                    @media(min-width: 1000px){
+                        width: 764px;
+                    }
                 }
 
                 p{
                     margin: 0;
                     padding-top: 2vw;
+
+                    @media(min-width: 1000px){
+                        padding-top: 26px;
+                    }
                 }
 
                 .price{
@@ -380,6 +385,10 @@ body{
                     align-self: flex-end;
                     padding-top: 9vw;
                     width: 10%;
+
+                    @media(min-width: 1000px){
+                        padding-top: 100px;
+                    }
                 }
             
                 .greenCheck{
@@ -391,6 +400,10 @@ body{
                     align-self: flex-end;
                     width: 0%;
 
+                    @media(min-width: 1000px){
+                        border-radius: 0 45px 45px 0;
+                        }
+
                 .fas.fa-check{
                     color: $tertiary;
                     background-color: white;
@@ -399,6 +412,12 @@ body{
                     padding: .8vw;
                     margin-top: 6vw;
                     font-size: 3.5vw;
+
+                    @media(min-width: 1000px){
+                        padding: 10px;
+                        margin-top: 68px;
+                        font-size: 35px
+                    }
                 }
             }
 
@@ -411,6 +430,10 @@ body{
                     transform: scaleX(1); 
                     transition: transform 500ms ease-in-out;
 
+                    @media(min-width: 1000px){
+                        width: 160px;
+                    }
+
                     .fas.fa-check{
                         display: inline-block;
                         transform: rotate(360deg);
@@ -418,14 +441,28 @@ body{
                         transition-delay: 100ms;
                     }
                 }
-
+                .dishName{
+                    @media(min-width: 1000px){
+                        width: 493px;
+                    }
+                }
                 .dishSubliner{
                     width: 58vw;
+
+                    @media(min-width: 1000px){
+                        width: 493px;
+                    }
                 }
 
                 .price{
                     position: relative;
-                    left: 3.5vw;            }
+                    left: 3.5vw;
+
+                    @media(min-width: 1000px){
+                    position: relative;
+                    left: 100px;
+                    }
+                }
             }
             }
             .orderDiv{

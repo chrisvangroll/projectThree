@@ -4,14 +4,11 @@ body {
   font-size: 4vw;
 }
 body .container {
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   position: relative;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   body .container {
     font-size: 40px;
   }
@@ -287,6 +284,7 @@ body .container main .restaurantName .iconContainer .fas.fa-heart {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 body .container main .restaurantName .iconContainer .fas.fa-heart:hover {
   opacity: 1;
@@ -340,8 +338,20 @@ body .container main .menuContainer {
   font-weight: 600;
   padding-left: 2.5vw;
 }
+@media (min-width: 1000px) {
+  body .container main .menuContainer {
+    padding-left: 30px;
+    align-content: space-between;
+    margin-bottom: 48px;
+    border-radius: 45px;
+    height: 180px;
+  }
+}
 body .container main .menuContainer .dishName {
   font-size: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 body .container main .menuContainer .dishSubliner {
   font-weight: 300;
@@ -350,15 +360,30 @@ body .container main .menuContainer .dishSubliner {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media (min-width: 1000px) {
+  body .container main .menuContainer .dishSubliner {
+    width: 764px;
+  }
+}
 body .container main .menuContainer p {
   margin: 0;
   padding-top: 2vw;
+}
+@media (min-width: 1000px) {
+  body .container main .menuContainer p {
+    padding-top: 26px;
+  }
 }
 body .container main .menuContainer .price {
   height: 100%;
   align-self: flex-end;
   padding-top: 9vw;
   width: 10%;
+}
+@media (min-width: 1000px) {
+  body .container main .menuContainer .price {
+    padding-top: 100px;
+  }
 }
 body .container main .menuContainer .greenCheck {
   background-color: #99E2D0;
@@ -369,6 +394,11 @@ body .container main .menuContainer .greenCheck {
   align-self: flex-end;
   width: 0%;
 }
+@media (min-width: 1000px) {
+  body .container main .menuContainer .greenCheck {
+    border-radius: 0 45px 45px 0;
+  }
+}
 body .container main .menuContainer .greenCheck .fas.fa-check {
   color: #99E2D0;
   background-color: white;
@@ -377,6 +407,13 @@ body .container main .menuContainer .greenCheck .fas.fa-check {
   padding: 0.8vw;
   margin-top: 6vw;
   font-size: 3.5vw;
+}
+@media (min-width: 1000px) {
+  body .container main .menuContainer .greenCheck .fas.fa-check {
+    padding: 10px;
+    margin-top: 68px;
+    font-size: 35px;
+  }
 }
 body .container main .menuContainer:hover {
   cursor: pointer;
@@ -387,18 +424,39 @@ body .container main .menuContainer:hover .greenCheck {
   transform: scaleX(1);
   transition: transform 500ms ease-in-out;
 }
+@media (min-width: 1000px) {
+  body .container main .menuContainer:hover .greenCheck {
+    width: 160px;
+  }
+}
 body .container main .menuContainer:hover .greenCheck .fas.fa-check {
   display: inline-block;
   transform: rotate(360deg);
   transition: transform 400ms;
   transition-delay: 100ms;
 }
+@media (min-width: 1000px) {
+  body .container main .menuContainer:hover .dishName {
+    width: 493px;
+  }
+}
 body .container main .menuContainer:hover .dishSubliner {
   width: 58vw;
+}
+@media (min-width: 1000px) {
+  body .container main .menuContainer:hover .dishSubliner {
+    width: 493px;
+  }
 }
 body .container main .menuContainer:hover .price {
   position: relative;
   left: 3.5vw;
+}
+@media (min-width: 1000px) {
+  body .container main .menuContainer:hover .price {
+    position: relative;
+    left: 100px;
+  }
 }
 body .container main .orderDiv {
   background-color: #e7e7e7;
