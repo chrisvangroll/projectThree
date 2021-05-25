@@ -317,6 +317,12 @@ body{
                         -webkit-text-fill-color: transparent ;
                         cursor: pointer;
 
+                        @media(min-width: 1000px){
+                            align-self: flex-end;
+                            font-size: 53px;
+                            margin-right: 10px;
+                            }
+
                         &:hover{
                             opacity: 1;
                         }
@@ -325,11 +331,6 @@ body{
                             opacity: 0;
                         }
 
-                        @media(min-width: 1000px){
-                        align-self: flex-end;
-                        font-size: 53px;
-                        margin-right: 10px;
-                        }
                     }
 
                         .far.fa-heart{
@@ -377,11 +378,11 @@ body{
                 padding-left: 2.5vw;
 
                 @media(min-width: 1000px){
-                    padding-left: 30px;
+                    padding-left: 22px;
                     align-content: space-between;
-                    margin-bottom: 48px;
+                    margin-bottom: 32px;
                     border-radius: 45px;
-                    height: 180px;
+                    height: 159px;
                 }
                 
                 .dishName{
@@ -504,14 +505,12 @@ body{
                 justify-content: center;
 
                 button{
-                    background-image: linear-gradient($secondary, $primary);
-                    width: 145px;
-                    border: none;
-                    padding: 13px;
-                    border-radius: 19px;
-                    margin-top: 21px;
-                    color: white;
-                    font-weight: 600;
+                    @include buttonStyles;
+                    @media (min-width: 1000px){
+                        padding: 30px;
+                        margin-top: 65px;
+                    }
+                   
                 }
             }
             span{

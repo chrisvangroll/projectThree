@@ -334,18 +334,18 @@ body .container main .restaurantName .iconContainer .fas.fa-heart {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
-body .container main .restaurantName .iconContainer .fas.fa-heart:hover {
-  opacity: 1;
-}
-body .container main .restaurantName .iconContainer .fas.fa-heart:hover + .far.fa-heart {
-  opacity: 0;
-}
 @media (min-width: 1000px) {
   body .container main .restaurantName .iconContainer .fas.fa-heart {
     align-self: flex-end;
     font-size: 53px;
     margin-right: 10px;
   }
+}
+body .container main .restaurantName .iconContainer .fas.fa-heart:hover {
+  opacity: 1;
+}
+body .container main .restaurantName .iconContainer .fas.fa-heart:hover + .far.fa-heart {
+  opacity: 0;
 }
 body .container main .restaurantName .iconContainer .far.fa-heart {
   align-self: flex-end;
@@ -388,11 +388,11 @@ body .container main .menuContainer {
 }
 @media (min-width: 1000px) {
   body .container main .menuContainer {
-    padding-left: 30px;
+    padding-left: 22px;
     align-content: space-between;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     border-radius: 45px;
-    height: 180px;
+    height: 159px;
   }
 }
 body .container main .menuContainer .dishName {
@@ -514,13 +514,19 @@ body .container main .orderDiv {
 }
 body .container main .orderDiv button {
   background-image: linear-gradient(#FF79DA, #9356DC);
-  width: 145px;
   border: none;
-  padding: 13px;
-  border-radius: 19px;
-  margin-top: 21px;
+  padding: 2.5vw;
+  border-radius: 5vw;
+  margin-top: 6vw;
   color: white;
   font-weight: 600;
+  font-size: 0.8em;
+}
+@media (min-width: 1000px) {
+  body .container main .orderDiv button {
+    padding: 30px;
+    margin-top: 65px;
+  }
 }
 body .container main span {
   border-bottom: 3px solid #99E2D0;
