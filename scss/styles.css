@@ -24,12 +24,27 @@ body .container .sectionOne .location {
 body .container .sectionOne .location i {
   margin: 4vw 4vw 0vw 0vw;
 }
+@media (min-width: 1000px) {
+  body .container .sectionOne .location i {
+    margin: 31px 28px 0vw 0vw;
+  }
+}
 body .container .sectionOne .discover {
   text-align: center;
   padding: 3vw 2vw 8vw 2vw;
 }
+@media (min-width: 1000px) {
+  body .container .sectionOne .discover {
+    padding: 0 2vw 71px 2vw;
+  }
+}
 body .container .sectionOne .discover h2 {
   margin-bottom: 5vw;
+}
+@media (min-width: 1000px) {
+  body .container .sectionOne .discover h2 {
+    margin-bottom: 45px;
+  }
 }
 body .container .sectionOne .discover p {
   margin: 0px;
@@ -44,8 +59,19 @@ body .container .sectionOne .discover button {
   font-weight: 600;
   font-size: 0.8em;
 }
+@media (min-width: 1000px) {
+  body .container .sectionOne .discover button {
+    padding: 30px;
+    margin-top: 65px;
+  }
+}
 body .container .sectionTwo h2 {
   margin-left: 3vw;
+}
+@media (min-width: 1000px) {
+  body .container .sectionTwo h2 {
+    margin: 25px 0px 25px 10px;
+  }
 }
 body .container .sectionTwo div {
   background-color: #e7e7e7;
@@ -105,6 +131,7 @@ body .container .sectionThree {
     display: flex;
     flex-flow: row wrap;
     padding-bottom: 10px;
+    margin-top: 45px;
   }
 }
 body .container .sectionThree .restaurantHeader {
