@@ -58,6 +58,7 @@ body .container .sectionOne .discover button {
   color: white;
   font-weight: 600;
   font-size: 0.8em;
+  cursor: pointer;
 }
 @media (min-width: 1000px) {
   body .container .sectionOne .discover button {
@@ -521,6 +522,9 @@ body .container main .orderDiv button {
   color: white;
   font-weight: 600;
   font-size: 0.8em;
+  cursor: pointer;
+  padding: 2.5vw 8vw;
+  margin-top: 0vw;
 }
 @media (min-width: 1000px) {
   body .container main .orderDiv button {
@@ -540,8 +544,6 @@ body footer {
   background-color: black;
   color: white;
   padding: 15px 20px 10px 20px;
-  position: relative;
-  bottom: 75px;
   font-size: 0.7em;
 }
 @media (min-width: 1200px) {

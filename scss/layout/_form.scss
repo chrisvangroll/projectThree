@@ -3,7 +3,7 @@ body{
     position: relative;
     font-family: $fontTwo;
     font-size: 4vw;
-
+    
     .container{
         max-width: 1000px;
         margin: auto;
@@ -506,6 +506,10 @@ body{
 
                 button{
                     @include buttonStyles;
+                    padding: 2.5vw 8vw;
+                    margin-top: 0vw;
+                    
+
                     @media (min-width: 1000px){
                         padding: 30px;
                         margin-top: 65px;
@@ -529,8 +533,8 @@ body{
         background-color: black;
         color: white;
         padding: 15px 20px 10px 20px;
-        position: relative;
-        bottom: 75px;
+        // position: relative;
+        // bottom: 75px;
         font-size: .7em;
         
         @media (min-width: 1200px){
