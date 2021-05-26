@@ -322,6 +322,12 @@ body .container main .restaurantName .iconContainer {
   bottom: 5vw;
   right: 3vw;
 }
+@media (min-width: 1000px) {
+  body .container main .restaurantName .iconContainer {
+    bottom: 33px;
+    right: 102px;
+  }
+}
 body .container main .restaurantName .iconContainer .fas.fa-heart {
   align-self: flex-end;
   font-size: 8vw;
@@ -338,7 +344,7 @@ body .container main .restaurantName .iconContainer .fas.fa-heart {
 @media (min-width: 1000px) {
   body .container main .restaurantName .iconContainer .fas.fa-heart {
     align-self: flex-end;
-    font-size: 53px;
+    font-size: 83px;
     margin-right: 10px;
   }
 }
@@ -357,7 +363,7 @@ body .container main .restaurantName .iconContainer .far.fa-heart {
 @media (min-width: 1000px) {
   body .container main .restaurantName .iconContainer .far.fa-heart {
     align-self: flex-end;
-    font-size: 53px;
+    font-size: 83px;
     margin-right: 10px;
   }
 }
@@ -528,8 +534,8 @@ body .container main .orderDiv button {
 }
 @media (min-width: 1000px) {
   body .container main .orderDiv button {
-    padding: 30px;
-    margin-top: 65px;
+    padding: 27px 70px;
+    margin-top: 0px;
   }
 }
 body .container main span {
@@ -539,12 +545,14 @@ body .container main span {
 body .homePageFooter {
   position: relative;
   bottom: 0px;
+  margin-top: 0;
 }
 body footer {
   background-color: black;
   color: white;
   padding: 15px 20px 10px 20px;
   font-size: 0.7em;
+  margin-top: -76px;
 }
 @media (min-width: 1200px) {
   body footer {
