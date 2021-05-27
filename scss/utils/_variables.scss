@@ -18,3 +18,23 @@ $fontTwo: roboto;
     font-size: .8em;
     cursor: pointer;
 }
+
+@keyframes PagefadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    80%{
+        opacity:0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loading{
+    to{
+        transform: rotate(1turn);
+    }
+}

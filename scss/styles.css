@@ -1,12 +1,78 @@
+@-webkit-keyframes PagefadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes PagefadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes hide {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes hide {
+  to {
+    opacity: 0;
+  }
+}
 body {
   position: relative;
   font-family: roboto;
   font-size: 4vw;
 }
+body .spinContainer {
+  padding-top: 29vh;
+  height: 100vh;
+  -webkit-animation: hide 0.1s linear 2.3s 1 forwards;
+          animation: hide 0.1s linear 2.3s 1 forwards;
+  position: absolute;
+  left: 45%;
+}
+body .spinContainer .spinner {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 20px solid #e7e7e7;
+  border-top: solid 20px #9356DC;
+  border-radius: 50%;
+  -webkit-animation: loading 1.5s linear infinite;
+          animation: loading 1.5s linear infinite;
+  margin: auto;
+}
 body .container {
   max-width: 1000px;
   margin: auto;
   position: relative;
+  -webkit-animation-name: PagefadeIn;
+          animation-name: PagefadeIn;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 @media (min-width: 1000px) {
   body .container {
@@ -82,6 +148,7 @@ body .container .sectionTwo div {
   margin: auto;
   border-radius: 5vw;
   margin-bottom: 4vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 @media (min-width: 1000px) {
   body .container .sectionTwo div {
@@ -392,6 +459,7 @@ body .container main .menuContainer {
   flex-flow: column wrap;
   font-weight: 600;
   padding-left: 2.5vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 @media (min-width: 1000px) {
   body .container main .menuContainer {

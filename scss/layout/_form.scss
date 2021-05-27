@@ -1,13 +1,43 @@
-
+@keyframes hide {
+    to {
+     opacity: 0;
+    }
+}
+   
 body{
     position: relative;
     font-family: $fontTwo;
     font-size: 4vw;
+
+    .spinContainer{
+        padding-top: 29vh;
+        height: 100vh;
+        animation: hide .1s linear 2.3s 1 forwards;
+        position: absolute;
+        left: 45%;
+        
+        .spinner{
+            display:flex;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            border: 20px solid $bkgroundcolor;
+            border-top: solid 20px $primary;
+            border-radius: 50%;
+            animation: loading 1.5s linear infinite;
+            margin: auto;
+        }   
+    }
+
+     
     
     .container{
         max-width: 1000px;
         margin: auto;
         position: relative;
+        animation-name: PagefadeIn;
+        animation-duration: 2.5s;
+
         @media(min-width: 1000px){
             font-size: 30px;
         }
@@ -66,6 +96,8 @@ body{
                 margin: auto;
                 border-radius: 5vw;
                 margin-bottom: 4vw;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                
                 @media (min-width: 1000px) {
                     border-radius: 26px;
                     margin-bottom: 30px;
@@ -381,6 +413,7 @@ body{
                 flex-flow: column wrap;
                 font-weight: 600;
                 padding-left: 2.5vw;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
                 @media(min-width: 1000px){
                     padding-left: 22px;
@@ -535,9 +568,7 @@ body{
         margin-top: 0;
     }
 
-    .menuPageFooter{
-
-    }
+    
 
     footer{
         background-color: black;
