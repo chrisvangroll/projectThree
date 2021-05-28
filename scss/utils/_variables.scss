@@ -38,3 +38,9 @@ $fontTwo: roboto;
         transform: rotate(1turn);
     }
 }
+
+@keyframes hide {
+    to {
+     opacity: 0;
+    }
+}

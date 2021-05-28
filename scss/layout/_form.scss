@@ -1,8 +1,4 @@
-@keyframes hide {
-    to {
-     opacity: 0;
-    }
-}
+
    
 body{
     position: relative;
@@ -13,7 +9,7 @@ body{
         padding-top: 29vh;
         height: 100vh;
         animation: hide .1s linear 2.3s 1 forwards;
-        position: absolute;
+        position: fixed;
         left: 45%;
         
         .spinner{
@@ -578,6 +574,11 @@ body{
         // bottom: 75px;
         font-size: .7em;
         margin-top: -76px;
+
+        .contact{
+            color: white;
+            text-decoration: none;
+        }
         
         @media (min-width: 1200px){
             font-size: 20px;

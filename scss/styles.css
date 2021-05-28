@@ -50,7 +50,7 @@ body .spinContainer {
   height: 100vh;
   -webkit-animation: hide 0.1s linear 2.3s 1 forwards;
           animation: hide 0.1s linear 2.3s 1 forwards;
-  position: absolute;
+  position: fixed;
   left: 45%;
 }
 body .spinContainer .spinner {
@@ -621,6 +621,10 @@ body footer {
   padding: 15px 20px 10px 20px;
   font-size: 0.7em;
   margin-top: -76px;
+}
+body footer .contact {
+  color: white;
+  text-decoration: none;
 }
 @media (min-width: 1200px) {
   body footer {
