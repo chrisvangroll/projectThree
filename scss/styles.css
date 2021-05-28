@@ -58,64 +58,71 @@ body .spinContainer .spinner {
   justify-content: center;
   width: 100px;
   height: 100px;
-  border: 20px solid #e7e7e7;
+  border: 20px solid #f3f3f3;
   border-top: solid 20px #9356DC;
   border-radius: 50%;
   -webkit-animation: loading 1.5s linear infinite;
           animation: loading 1.5s linear infinite;
   margin: auto;
 }
-body .container {
-  max-width: 1000px;
-  margin: auto;
-  position: relative;
+body .homePageContainer {
   -webkit-animation-name: PagefadeIn;
           animation-name: PagefadeIn;
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
 }
 @media (min-width: 1000px) {
-  body .container {
+  body .homePageContainer {
     font-size: 30px;
   }
 }
-body .container .sectionOne {
-  background-color: #e7e7e7;
+body .homePageContainer header {
+  font-family: shrikhand;
 }
-body .container .sectionOne .location {
-  background-color: #d5d5d5;
+body .homePageContainer header h1 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+body .homePageContainer .sectionOne {
+  background-color: #f3f3f3;
+}
+body .homePageContainer .sectionOne .location {
+  background-color: #e4e4e4;
   display: flex;
   justify-content: center;
 }
-body .container .sectionOne .location i {
+body .homePageContainer .sectionOne .location i {
   margin: 4vw 4vw 0vw 0vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionOne .location i {
+  body .homePageContainer .sectionOne .location i {
     margin: 31px 28px 0vw 0vw;
   }
 }
-body .container .sectionOne .discover {
+body .homePageContainer .sectionOne .discover {
   text-align: center;
   padding: 3vw 2vw 8vw 2vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionOne .discover {
+  body .homePageContainer .sectionOne .discover {
     padding: 0 2vw 71px 2vw;
   }
 }
-body .container .sectionOne .discover h2 {
+body .homePageContainer .sectionOne .discover h2 {
   margin-bottom: 5vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionOne .discover h2 {
+  body .homePageContainer .sectionOne .discover h2 {
     margin-bottom: 45px;
   }
 }
-body .container .sectionOne .discover p {
+body .homePageContainer .sectionOne .discover p {
   margin: 0px;
 }
-body .container .sectionOne .discover button {
+body .homePageContainer .sectionOne .discover button {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border: none;
   padding: 2.5vw;
@@ -126,40 +133,40 @@ body .container .sectionOne .discover button {
   font-size: 0.8em;
   cursor: pointer;
 }
-body .container .sectionOne .discover button:hover {
+body .homePageContainer .sectionOne .discover button:hover {
   opacity: 0.8;
 }
 @media (min-width: 1000px) {
-  body .container .sectionOne .discover button {
+  body .homePageContainer .sectionOne .discover button {
     padding: 30px;
     margin-top: 65px;
   }
 }
-body .container .sectionTwo h2 {
+body .homePageContainer .sectionTwo h2 {
   margin-left: 3vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionTwo h2 {
+  body .homePageContainer .sectionTwo h2 {
     margin: 25px 0px 25px 10px;
   }
 }
-body .container .sectionTwo div {
-  background-color: #e7e7e7;
+body .homePageContainer .sectionTwo div {
+  background-color: #f3f3f3;
   display: flex;
   font-weight: 600;
   width: 90%;
   margin: auto;
   border-radius: 5vw;
-  margin-bottom: 4vw;
+  margin-bottom: 6vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 @media (min-width: 1000px) {
-  body .container .sectionTwo div {
-    border-radius: 26px;
-    margin-bottom: 30px;
+  body .homePageContainer .sectionTwo div {
+    border-radius: 31px;
+    margin-bottom: 40px;
   }
 }
-body .container .sectionTwo div .numbers {
+body .homePageContainer .sectionTwo div .numbers {
   background-color: #9356DC;
   border-radius: 6vw;
   padding: 1vw 2vw;
@@ -169,54 +176,54 @@ body .container .sectionTwo div .numbers {
   right: 2.5vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionTwo div .numbers {
+  body .homePageContainer .sectionTwo div .numbers {
     padding: 10px 20px;
   }
 }
-body .container .sectionTwo div i {
+body .homePageContainer .sectionTwo div i {
   margin: 5vw 3vw 0vw 1vw;
   color: gray;
 }
 @media (min-width: 1000px) {
-  body .container .sectionTwo div i {
-    margin: 35px 3vw 0vw 10px;
+  body .homePageContainer .sectionTwo div i {
+    margin: 40px 3vw 0vw 10px;
   }
 }
-body .container .sectionTwo div .fas.fa-store {
+body .homePageContainer .sectionTwo div .fas.fa-store {
   color: #9356DC;
 }
-body .container .sectionTwo div p {
+body .homePageContainer .sectionTwo div p {
   margin: 5vw 0vw 4vw 0vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionTwo div p {
-    margin: 35px 0vw 10px 0vw;
+  body .homePageContainer .sectionTwo div p {
+    margin: 40px 0vw 15px 0vw;
   }
 }
-body .container .sectionThree {
-  background-color: #e7e7e7;
+body .homePageContainer .sectionThree {
+  background-color: #f3f3f3;
   padding-bottom: 15px;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree {
+  body .homePageContainer .sectionThree {
     display: flex;
     flex-flow: row wrap;
     padding-bottom: 10px;
     margin-top: 45px;
   }
 }
-body .container .sectionThree .restaurantHeader {
+body .homePageContainer .sectionThree .restaurantHeader {
   padding: 5vw 0vw 0vw 5vw;
   font-size: 6.5vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantHeader {
+  body .homePageContainer .sectionThree .restaurantHeader {
     width: 100%;
     padding: 0px 0vw 0vw 43px;
     font-size: 64px;
   }
 }
-body .container .sectionThree .restaurantCard {
+body .homePageContainer .sectionThree .restaurantCard {
   width: 90%;
   margin: auto;
   position: relative;
@@ -225,22 +232,22 @@ body .container .sectionThree .restaurantCard {
   color: black;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantCard {
+  body .homePageContainer .sectionThree .restaurantCard {
     width: 47%;
   }
 }
-body .container .sectionThree .restaurantCard .imageBox {
+body .homePageContainer .sectionThree .restaurantCard .imageBox {
   width: 100%;
   height: 0px;
   border-radius: 5vw 5vw 0px 0px;
   padding-top: 50%;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantCard .imageBox {
+  body .homePageContainer .sectionThree .restaurantCard .imageBox {
     border-radius: 25px 25px 0px 0px;
   }
 }
-body .container .sectionThree .restaurantCard .new {
+body .homePageContainer .sectionThree .restaurantCard .new {
   position: relative;
   color: green;
   background-color: #99E2D0;
@@ -254,20 +261,20 @@ body .container .sectionThree .restaurantCard .new {
   margin-top: 0px;
 }
 @media (max-width: 700px) {
-  body .container .sectionThree .restaurantCard .new {
+  body .homePageContainer .sectionThree .restaurantCard .new {
     top: 17px;
     right: 20px;
   }
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantCard .new {
+  body .homePageContainer .sectionThree .restaurantCard .new {
     padding: 10px 38px;
     top: 16px;
     right: 33px;
     font-size: 26px;
   }
 }
-body .container .sectionThree .restaurantCard .restaurantInfo {
+body .homePageContainer .sectionThree .restaurantCard .restaurantInfo {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -278,19 +285,19 @@ body .container .sectionThree .restaurantCard .restaurantInfo {
   margin-bottom: 50px;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantCard .restaurantInfo {
+  body .homePageContainer .sectionThree .restaurantCard .restaurantInfo {
     padding: 1px 14px;
     font-size: 30px;
     margin-bottom: 0px;
     border-radius: 0 0 25px 25px;
   }
 }
-body .container .sectionThree .restaurantCard .restaurantInfo .iconContainer {
+body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer {
   display: flex;
   justify-content: flex-end;
   position: relative;
 }
-body .container .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart {
+body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart {
   align-self: flex-end;
   font-size: 6vw;
   margin-right: 5vw;
@@ -302,47 +309,47 @@ body .container .sectionThree .restaurantCard .restaurantInfo .iconContainer .fa
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body .container .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart:hover {
+body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart:hover {
   opacity: 1;
 }
-body .container .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart:hover + .far.fa-heart {
+body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart:hover + .far.fa-heart {
   opacity: 0;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart {
+  body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart {
     align-self: flex-end;
     font-size: 53px;
     margin-right: 10px;
   }
 }
-body .container .sectionThree .restaurantCard .restaurantInfo .iconContainer .far.fa-heart {
+body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer .far.fa-heart {
   align-self: flex-end;
   font-size: 6vw;
   margin-right: 5vw;
   opacity: 1;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantCard .restaurantInfo .iconContainer .far.fa-heart {
+  body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer .far.fa-heart {
     align-self: flex-end;
     font-size: 53px;
     margin-right: 10px;
   }
 }
-body .container .sectionThree .restaurantCard .restaurantInfo h3 {
+body .homePageContainer .sectionThree .restaurantCard .restaurantInfo h3 {
   margin-bottom: 1vw;
   position: relative;
   top: 3vw;
   margin-top: 1.5vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantCard .restaurantInfo h3 {
+  body .homePageContainer .sectionThree .restaurantCard .restaurantInfo h3 {
     margin-bottom: 5px;
     position: relative;
     top: 26px;
     margin-top: 5px;
   }
 }
-body .container .sectionThree .restaurantCard .restaurantInfo p {
+body .homePageContainer .sectionThree .restaurantCard .restaurantInfo p {
   margin-top: 1vw;
   font-weight: 400;
   position: relative;
@@ -350,12 +357,22 @@ body .container .sectionThree .restaurantCard .restaurantInfo p {
   margin-bottom: 1.5vw;
 }
 @media (min-width: 1000px) {
-  body .container .sectionThree .restaurantCard .restaurantInfo p {
+  body .homePageContainer .sectionThree .restaurantCard .restaurantInfo p {
     margin-top: 9px;
     font-weight: 400;
     position: relative;
     bottom: 30px;
     margin-bottom: 0px;
+  }
+}
+body .container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  body .container {
+    font-size: 30px;
   }
 }
 body .container header {
@@ -376,9 +393,8 @@ body .container header .pic {
   width: 100%;
 }
 body .container main {
-  background-color: #e7e7e7;
+  background-color: #f3f3f3;
   border-radius: 50px 50px 0px 0px;
-  bottom: 76px;
   position: relative;
 }
 body .container main .restaurantName {
@@ -585,7 +601,7 @@ body .container main .menuContainer:hover .price {
   }
 }
 body .container main .orderDiv {
-  background-color: #e7e7e7;
+  background-color: #f3f3f3;
   height: 115px;
   display: flex;
   justify-content: center;
@@ -622,11 +638,10 @@ body .homePageFooter {
   margin-top: 0;
 }
 body footer {
-  background-color: black;
+  background-color: #000000c4;
   color: white;
   padding: 15px 20px 10px 20px;
   font-size: 0.7em;
-  margin-top: -76px;
 }
 body footer .contact {
   color: white;

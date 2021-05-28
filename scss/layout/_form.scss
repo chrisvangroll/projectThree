@@ -25,23 +25,30 @@ body{
         }   
     }
 
-     
-    
-    .container{
+//Home Page
+    .homePageContainer{
+        animation-name: PagefadeIn;
+        animation-duration: 2.5s;
         max-width: 1000px;
         margin: auto;
         position: relative;
-        animation-name: PagefadeIn;
-        animation-duration: 2.5s;
 
         @media(min-width: 1000px){
             font-size: 30px;
         }
-//Home Page
+
+        header{
+            font-family: $fontOne;
+            
+            h1{
+                text-align: center;
+                margin-bottom: 6px;
+            }
+        }
         .sectionOne{
             background-color: $bkgroundcolor;
             .location{
-                background-color: #d5d5d5;
+                background-color: #e4e4e4;
                 display: flex;
                 justify-content: center;
                 i{
@@ -91,12 +98,12 @@ body{
                 width: 90%;
                 margin: auto;
                 border-radius: 5vw;
-                margin-bottom: 4vw;
+                margin-bottom: 6vw;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 
                 @media (min-width: 1000px) {
-                    border-radius: 26px;
-                    margin-bottom: 30px;
+                    border-radius: 31px;
+                    margin-bottom: 40px;
                 }
             
                 .numbers{
@@ -117,7 +124,7 @@ body{
                     color: gray;
 
                     @media (min-width: 1000px){
-                        margin: 35px 3vw 0vw 10px;
+                        margin: 40px 3vw 0vw 10px;
                     }
                 }
                 .fas.fa-store{
@@ -126,7 +133,7 @@ body{
                 p{
                     margin: 5vw 0vw 4vw 0vw;
                     @media (min-width: 1000px){
-                        margin: 35px 0vw 10px 0vw;
+                        margin: 40px 0vw 15px 0vw;
                     } 
                 }
             }
@@ -295,8 +302,18 @@ body{
                 }            
             }         
         }
+    }
         
 //Menu Pages
+    .container{
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    
+
+    @media(min-width: 1000px){
+        font-size: 30px;
+    }
         header{
             font-family: $fontOne;
             .fas.fa-arrow-left{
@@ -318,7 +335,6 @@ body{
         main{
             background-color: $bkgroundcolor;
             border-radius: 50px 50px 0px 0px;
-            bottom: 76px;
             position: relative;
 
             .restaurantName{
@@ -391,6 +407,12 @@ body{
                 left: 26px;
                 margin-bottom: 50px;
             }
+
+            // section:nth-child(1){
+            //     animation-name: pagefadeIn;
+            //     animation-delay: 1s;
+            //     animation-duration: 2.5s;
+            // }
             
             h3{
                 color:gray;
@@ -558,22 +580,20 @@ body{
         }
     }
 
+//footers
     .homePageFooter{
         position: relative;
         bottom: 0px;
         margin-top: 0;
     }
 
-    
-
     footer{
-        background-color: black;
+        background-color:#000000c4;
         color: white;
         padding: 15px 20px 10px 20px;
         // position: relative;
         // bottom: 75px;
         font-size: .7em;
-        margin-top: -76px;
 
         .contact{
             color: white;
