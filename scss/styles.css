@@ -126,6 +126,9 @@ body .container .sectionOne .discover button {
   font-size: 0.8em;
   cursor: pointer;
 }
+body .container .sectionOne .discover button:hover {
+  opacity: 0.8;
+}
 @media (min-width: 1000px) {
   body .container .sectionOne .discover button {
     padding: 30px;
@@ -534,7 +537,7 @@ body .container main .menuContainer .greenCheck .fas.fa-check {
 @media (min-width: 1000px) {
   body .container main .menuContainer .greenCheck .fas.fa-check {
     padding: 10px;
-    margin-top: 68px;
+    margin-top: 52px;
     font-size: 35px;
   }
 }
@@ -599,6 +602,9 @@ body .container main .orderDiv button {
   cursor: pointer;
   padding: 2.5vw 8vw;
   margin-top: 0vw;
+}
+body .container main .orderDiv button:hover {
+  opacity: 0.8;
 }
 @media (min-width: 1000px) {
   body .container main .orderDiv button {
