@@ -347,7 +347,7 @@ body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconConta
 }
 body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer .fas.fa-heart {
   align-self: flex-end;
-  font-size: 8vw;
+  font-size: 7vw;
   margin-right: 5vw;
   position: absolute;
   opacity: 0;
@@ -377,8 +377,8 @@ body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconConta
   font-size: 6vw;
   margin-right: 5vw;
   opacity: 1;
-  margin-bottom: 1vw;
-  margin-right: 6vw;
+  margin-bottom: 0.5vw;
+  margin-right: 5.5vw;
 }
 @media (min-width: 1000px) {
   body .homePageContainer .sectionThree .restaurantCard .restaurantInfo .iconContainer .far.fa-heart {
@@ -469,7 +469,7 @@ body .container main .restaurantName .iconContainer {
 }
 body .container main .restaurantName .iconContainer .fas.fa-heart {
   align-self: flex-end;
-  font-size: 8vw;
+  font-size: 9vw;
   margin-right: 5vw;
   position: absolute;
   opacity: 0;
@@ -483,27 +483,32 @@ body .container main .restaurantName .iconContainer .fas.fa-heart {
 @media (min-width: 1000px) {
   body .container main .restaurantName .iconContainer .fas.fa-heart {
     align-self: flex-end;
-    font-size: 83px;
+    font-size: 90px;
     margin-right: 10px;
   }
 }
 body .container main .restaurantName .iconContainer .fas.fa-heart:hover {
-  opacity: 1;
-}
-body .container main .restaurantName .iconContainer .fas.fa-heart:hover + .far.fa-heart {
-  opacity: 0;
+  -webkit-animation-name: hearts;
+          animation-name: hearts;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .container main .restaurantName .iconContainer .far.fa-heart {
   align-self: flex-end;
   font-size: 8vw;
-  margin-right: 5vw;
+  margin-right: 5.5vw;
   opacity: 1;
+  margin-bottom: 0.3vw;
 }
 @media (min-width: 1000px) {
   body .container main .restaurantName .iconContainer .far.fa-heart {
     align-self: flex-end;
     font-size: 83px;
     margin-right: 10px;
+    margin-bottom: 3px;
+    margin-right: 14px;
   }
 }
 body .container main h2 {
