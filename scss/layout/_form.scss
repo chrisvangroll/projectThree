@@ -28,7 +28,8 @@ body{
 //Home Page
     .homePageContainer{
         animation-name: PagefadeIn;
-        animation-duration: 2.5s;
+        // animation-duration: 2.5s;
+        animation-duration: .5s;
         max-width: 1000px;
         margin: auto;
         position: relative;
@@ -230,28 +231,31 @@ body{
 
                         .fas.fa-heart {
                             align-self: flex-end;
-                            font-size: 6vw;
+                            font-size: 8vw;
                             margin-right: 5vw;
                             position: absolute;
                             opacity: 0;
-                            color: linear-gradient($primary, $secondary);
-                            // transition: opacity 200ms;
                             background: linear-gradient($primary, $secondary);
                             background-clip: text;
-                            -webkit-text-fill-color: transparent ;
+                            -webkit-text-fill-color: transparent;
 
                             &:hover{
-                                opacity: 1;
+                                animation-name: hearts;
+                                animation-duration: 1s;
+                                animation-fill-mode: forwards;
+                                // animation-name: bigger;
+                                // animation-fill-mode: forwards;
                             }
 
-                            &:hover + .far.fa-heart{
-                                opacity: 0;
-                            }
+                            // &:hover + .far.fa-heart{
+                            //     opacity: 0;
+                            // }
     
                             @media(min-width: 1000px){
                             align-self: flex-end;
-                            font-size: 53px;
-                            margin-right: 10px;
+                            font-size: 60px;
+                            margin-right: 14px;
+                            margin-bottom: 3px;
                             }
                         }
     
@@ -260,11 +264,24 @@ body{
                             font-size: 6vw;
                             margin-right: 5vw;
                             opacity: 1;
+                            margin-bottom: 1vw;
+                            margin-right: 6vw;
+
+                            // &:hover{
+                            //     opacity:0;
+                            // }
+
+                            // &:hover{
+                            //     animation-name: heartsOut;
+                            //     animation-duration: 2s;
+                            //     animation-fill-mode: forwards;
+                            // }
                             
                             @media(min-width: 1000px){
                             align-self: flex-end;
                             font-size: 53px;
-                            margin-right: 10px;
+                            margin-right: 18px;
+                            margin-bottom: 5px;
                             }
                         }
 
