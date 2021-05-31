@@ -141,6 +141,7 @@ body .homePageContainer .sectionOne .location {
   background-color: #e4e4e4;
   display: flex;
   justify-content: center;
+  box-shadow: inset 0px 20px 6px -17px #b5b5b5;
 }
 body .homePageContainer .sectionOne .location i {
   margin: 4vw 4vw 0vw 0vw;
