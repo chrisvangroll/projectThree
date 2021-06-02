@@ -88,6 +88,28 @@
     opacity: 0;
   }
 }
+@-webkit-keyframes menuAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menuAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   position: relative;
   font-family: roboto;
@@ -116,8 +138,8 @@ body .spinContainer .spinner {
 body .homePageContainer {
   -webkit-animation-name: PagefadeIn;
           animation-name: PagefadeIn;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   max-width: 1000px;
   margin: auto;
   position: relative;
@@ -579,6 +601,25 @@ body .container main .menuContainer {
   font-weight: 600;
   padding-left: 2.5vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+}
+body .container main .menuContainer:nth-child(2) {
+  -webkit-animation-name: menuAnimation;
+          animation-name: menuAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+body .container main .menuContainer:nth-child(3) {
+  -webkit-animation-name: menuAnimation;
+          animation-name: menuAnimation;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+body .container main .menuContainer:nth-child(4) {
+  -webkit-animation-name: menuAnimation;
+          animation-name: menuAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 @media (min-width: 1000px) {
   body .container main .menuContainer {
@@ -630,16 +671,21 @@ body .container main .menuContainer .price {
 body .container main .menuContainer .greenCheck {
   background-color: #99E2D0;
   text-align: center;
-  transform: translateX(15vw);
+  transform: translateX(0px);
+  transition-duration: 0.5s;
   border-radius: 0vw 4vw 4vw 0vw;
   height: 100%;
   align-self: flex-end;
   width: 0%;
-  overflow: hidden;
+  position: relative;
+  left: 15vw;
 }
 @media (min-width: 1000px) {
   body .container main .menuContainer .greenCheck {
     border-radius: 0 45px 45px 0;
+    width: 160px;
+    position: relative;
+    left: 160px;
   }
 }
 body .container main .menuContainer .greenCheck .fas.fa-check {
@@ -663,13 +709,14 @@ body .container main .menuContainer:hover {
 }
 body .container main .menuContainer:hover .greenCheck {
   width: 15vw;
-  transform: translateX(0vw);
-  transition: transform 500ms ease-in-out;
+  transform: translateX(-15vw);
+  transition: transform 0.5s ease-in-out;
   overflow: hidden;
 }
 @media (min-width: 1000px) {
   body .container main .menuContainer:hover .greenCheck {
     width: 160px;
+    transform: translateX(-160px);
   }
 }
 body .container main .menuContainer:hover .greenCheck .fas.fa-check {
