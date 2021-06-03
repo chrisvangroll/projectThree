@@ -1,0 +1,174 @@
+body .container .menuContainer{
+    background-color: white;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5vw;
+    border-radius: 4vw;
+    width: 95%;
+    height: 16vw;
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: 600;
+    padding-left: 2.5vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+
+    &:nth-child(2){
+        animation-name: menuAnimation;
+        // animation-delay: 1s;
+        animation-duration: 1s;
+    }
+
+    &:nth-child(3){
+        animation-name: menuAnimation;
+        animation-duration: 1.5s;
+    }
+
+    &:nth-child(4){
+        animation-name: menuAnimation;
+        animation-duration: 2s;
+
+    }
+
+    @media(min-width: 1000px){
+        padding-left: 22px;
+        align-content: space-between;
+        margin-bottom: 32px;
+        border-radius: 45px;
+        height: 159px;
+    }
+    
+        .dishName{
+            font-size: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .dishSubliner{
+            font-weight: 300;
+            width: 68vw;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            @media(min-width: 1000px){
+                width: 764px;
+            }
+        }
+
+        p{
+            margin: 0;
+            padding-top: 2vw;
+
+            @media(min-width: 1000px){
+                padding-top: 26px;
+            }
+        }
+
+        .price{
+            height: 100%;
+            align-self: flex-end;
+            padding-top: 9vw;
+            width: 10%;
+
+            @media(min-width: 1000px){
+                padding-top: 100px;
+            }
+        }
+    
+        .greenCheck{
+            background-color: $tertiary;
+            text-align: center;
+            transform: translateX(0px);
+            transition-duration: .5s;
+            border-radius: 0vw 4vw 4vw 0vw;
+            height: 100%;
+            align-self: flex-end;
+            width: 0%;
+            position: relative;
+            left: 15vw;
+            
+
+            @media(min-width: 1000px){
+                border-radius: 0 45px 45px 0;
+                width: 160px;
+                position: relative;
+                left: 160px;
+                }
+        }
+        .fas.fa-check{
+            color: $tertiary;
+            background-color: white;
+            color: #99E2D0;
+            border-radius: 4vw;
+            padding: .8vw;
+            margin-top: 6vw;
+            font-size: 3.5vw;
+
+            @media(min-width: 1000px){
+                padding: 10px;
+                margin-top: 52px;
+                font-size: 35px
+            }
+        }
+
+        span{
+            border-bottom: 3px solid $tertiary;
+            padding-bottom: 4px;
+        }
+        
+        
+
+
+&:hover{
+    cursor: pointer;
+
+        .greenCheck{
+            width: 15vw;
+            // transform-origin: right 50%;
+            transform: translateX(-15vw); 
+            transition: transform .5s ease-in-out;
+            overflow: hidden;
+
+            
+
+            @media(min-width: 1000px){
+                width: 160px;
+                transform: translateX(-160px); 
+                
+            }
+
+            .fas.fa-check{
+                display: inline-block;
+                transform: rotate(360deg);
+                transition: transform 400ms;
+                transition-delay: 100ms;
+            }
+        }
+        .dishName{
+            @media(min-width: 1000px){
+                width: 493px;
+            }
+        }
+        .dishSubliner{
+            width: 58vw;
+
+            @media(min-width: 1000px){
+                width: 493px;
+            }
+        }
+
+        .price{
+            position: relative;
+            left: 3.5vw;
+
+            @media(min-width: 1000px){
+            position: relative;
+            left: 100px;
+            }
+        }
+
+}
+}
+

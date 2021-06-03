@@ -1,0 +1,223 @@
+body .homePageContainer .sectionThree{
+    background-color: $bkgroundcolor;
+    padding-bottom: 15px;
+    @media(min-width: 1000px){
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 10px;
+        margin-top: 45px;
+    }
+
+    .restaurantHeader{
+        padding: 5vw 0vw 0vw 5vw;
+        font-size: 6.5vw;
+
+        @media(min-width: 1000px){
+            width: 100%;
+            padding: 0px 0vw 0vw 43px;
+            font-size: 64px;
+        }
+    }
+    
+    .restaurantCard{
+        width: 90%;
+        margin: auto;
+        position: relative;
+        margin-bottom: 5vw;
+        text-decoration: none;
+        color: black;
+        @media (min-width:1000px){
+            width: 47%;
+        }
+
+        .imageBoxOne{
+            width: 100%;
+            height: 0px;
+            border-radius: 5vw 5vw 0px 0px;
+            padding-top: 50%;
+            background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+            background-size: 100% 100%;
+
+            @media(min-width: 1000px){
+            border-radius: 25px 25px 0px 0px;
+            }   
+        }
+        .imageBoxTwo{
+            width: 100%;
+            height: 0px;
+            border-radius: 5vw 5vw 0px 0px;
+            padding-top: 50%;
+            background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+            background-size: 100% 100%;
+
+            
+
+            @media(min-width: 1000px){
+            border-radius: 25px 25px 0px 0px;
+            }   
+        }
+
+        .imageBoxThree{
+            width: 100%;
+            height: 0px;
+            border-radius: 5vw 5vw 0px 0px;
+            padding-top: 50%;
+            background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+            background-size: 100% 100%;
+
+            @media(min-width: 1000px){
+            border-radius: 25px 25px 0px 0px;
+            }   
+        }
+
+        .imageBoxFour{
+            width: 100%;
+            height: 0px;
+            border-radius: 5vw 5vw 0px 0px;
+            padding-top: 50%;
+            // background-color: green;
+            background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+            background-size: 100% 100%;
+        
+            @media(min-width: 1000px){
+            border-radius: 25px 25px 0px 0px;
+            }   
+            
+        }
+
+
+        .new{
+            position: relative;
+            color: green;
+            background-color: #99E2D0;
+            padding: 1vw 6vw;
+            border-radius: 0.5vw;
+            float: right;
+            z-index: 99;
+            position: relative;
+            top: 35px;
+            right: 40px;
+            margin-top: 0px;
+            @media (max-width: 700px){
+                top: 17px;
+                right: 20px;
+            }
+            @media (min-width: 1000px){
+                padding: 10px 38px;
+                top: 16px;
+                right: 33px;
+                font-size: 26px;
+            }
+        }
+       
+        .restaurantInfo{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            background-color: white;
+            padding: 0vw 3vw;
+            font-size: 4vw;
+            border-radius: 0 0 5vw 5vw;
+            margin-bottom: 50px;
+            @media(min-width: 1000px){
+                padding: 1px 14px;
+                font-size: 30px;
+                margin-bottom: 0px;
+                border-radius: 0 0 25px 25px;
+            }
+
+            .iconContainer{
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+
+                .fas.fa-heart {
+                    align-self: flex-end;
+                    font-size: 7vw;
+                    margin-right: 5vw;
+                    position: absolute;
+                    opacity: 0;
+                    background: linear-gradient($primary, $secondary);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                    &:hover{
+                        animation-name: hearts;
+                        animation-duration: 1s;
+                        animation-fill-mode: forwards;
+                        // animation-name: bigger;
+                        // animation-fill-mode: forwards;
+                    }
+
+                    // &:hover + .far.fa-heart{
+                    //     opacity: 0;
+                    // }
+
+                    @media(min-width: 1000px){
+                    align-self: flex-end;
+                    font-size: 60px;
+                    margin-right: 14px;
+                    margin-bottom: 3px;
+                    }
+                }
+
+                    .far.fa-heart{
+                    align-self: flex-end;
+                    font-size: 6vw;
+                    margin-right: 5vw;
+                    opacity: 1;
+                    margin-bottom: .5vw;
+                    margin-right: 5.5vw;
+
+                    // &:hover{
+                    //     opacity:0;
+                    // }
+
+                    // &:hover{
+                    //     animation-name: heartsOut;
+                    //     animation-duration: 2s;
+                    //     animation-fill-mode: forwards;
+                    // }
+                    
+                    @media(min-width: 1000px){
+                    align-self: flex-end;
+                    font-size: 53px;
+                    margin-right: 18px;
+                    margin-bottom: 5px;
+                    }
+                }
+
+            }
+
+            
+            h3{
+                margin-bottom: 1vw;
+                position: relative;
+                top: 3vw;
+                margin-top: 1.5vw;
+                @media(min-width: 1000px){
+                    margin-bottom: 5px;
+                    position: relative;
+                    top: 26px;
+                    margin-top: 5px;
+                }
+            }
+
+            p{
+                margin-top: 1vw;
+                font-weight: 400;
+                position: relative;
+                bottom: 4vw;
+                margin-bottom: 1.5vw;
+                @media(min-width: 1000px){
+                    margin-top: 9px;
+                    font-weight: 400;
+                    position: relative;
+                    bottom: 30px;
+                    margin-bottom: 0px;
+                }
+            }
+            
+        }            
+    }         
+}

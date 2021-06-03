@@ -1,0 +1,113 @@
+ .container{
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+
+    @media(min-width: 1000px){
+        font-size: 30px;
+    }
+        header{
+            font-family: $fontOne;
+            .fas.fa-arrow-left{
+                font-size: 165%;
+                position: absolute;
+                top: 9px;
+                left: 30px;
+                color: black;
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 6px;
+            }
+            .pic{
+                width: 100%;
+                
+            }
+        }
+        main{
+            background-color: $bkgroundcolor;
+            border-radius: 50px 50px 0px 0px;
+            position: relative;
+            bottom: 76px;
+
+            .restaurantName{
+                display: flex;
+                justify-content: space-between;
+
+                .iconContainer{
+                    display: flex;
+                    justify-content: flex-end;
+                    position: relative;
+                    bottom: 5vw;
+                    right: 3vw;
+
+                    @media (min-width: 1000px) {
+                        bottom: 33px;
+                        right: 102px;   
+                    }
+
+                    .fas.fa-heart {
+                        align-self: flex-end;
+                        font-size: 9vw;
+                        margin-right: 5vw;
+                        position: absolute;
+                        opacity: 0;
+                        color: linear-gradient($primary, $secondary);
+                        background: linear-gradient($primary, $secondary);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent ;
+                        cursor: pointer;
+
+                        @media(min-width: 1000px){
+                            align-self: flex-end;
+                            font-size: 90px;
+                            margin-right: 10px;
+                            }
+                                     
+
+                        &:hover{
+                            animation-name: hearts;
+                            animation-duration: .5s;
+                            animation-fill-mode: forwards;
+                        }
+
+
+                    }
+
+                        .far.fa-heart{
+                        align-self: flex-end;
+                        font-size: 8vw;
+                        margin-right: 5.5vw;
+                        opacity: 1;
+                        margin-bottom: .3vw;
+                        
+                        @media(min-width: 1000px){
+                        align-self: flex-end;
+                        font-size: 83px;
+                        margin-right: 10px;
+                        margin-bottom: 3px;
+                        margin-right: 14px;
+                        }
+                    }
+
+                }
+
+            }
+            
+            h2{
+                font-family: shrikhand;
+                font-size: 2em;
+                position: relative;
+                top: 22px;
+                left: 26px;
+                margin-bottom: 50px;
+            }
+
+            
+            h3{
+                color:gray;
+                margin-top: 10px;
+                @include marginLeft();
+            }
+        }
+    }    

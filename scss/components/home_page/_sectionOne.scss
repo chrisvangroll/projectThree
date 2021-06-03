@@ -1,0 +1,42 @@
+
+body .homePageContainer .sectionOne{
+    background-color: $bkgroundcolor;
+    .location{
+        background-color: #e4e4e4;
+        display: flex;
+        justify-content: center;
+        border-top: solid #80808036;
+
+        i{
+            margin: 4vw 4vw 0vw 0vw;
+            @media (min-width: 1000px){
+                margin: 31px 28px 0vw 0vw;
+            }
+        }
+    }
+    .discover{
+        text-align: center;
+        padding: 3vw 2vw 8vw 2vw;
+        @media (min-width: 1000px) {
+            padding: 0 2vw 71px 2vw;
+        }
+
+        h2{
+            margin-bottom: 5vw;
+            @media(min-width: 1000px){
+                margin-bottom: 45px;
+            }
+        }
+        p{
+            margin: 0px;
+        }
+        button{
+            @include buttonStyles;
+            @media (min-width: 1000px){
+                padding: 30px;
+                margin-top: 65px;
+            }
+        }
+        
+    }
+}

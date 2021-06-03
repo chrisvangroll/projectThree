@@ -1,0 +1,55 @@
+body .homePageContainer .sectionTwo{
+    h2{
+        margin-left: 3vw;
+        @media(min-width: 1000px){
+            margin: 25px 0px 25px 10px;
+        }
+    }
+    div{
+        background-color: $bkgroundcolor;
+        display: flex;
+        font-weight: 600;
+        width: 90%;
+        margin: auto;
+        border-radius: 5vw;
+        margin-bottom: 6vw;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+        @media (min-width: 1000px) {
+            border-radius: 31px;
+            margin-bottom: 40px;
+        }
+    
+        .numbers{
+            background-color: #9356DC;
+            border-radius: 6vw;
+            padding: 1vw 2vw;
+            color: white;
+            position: relative;
+            bottom: 1vw;
+            right: 2.5vw;
+            @media (min-width: 1000px){
+                padding: 10px 20px;
+            }
+        }
+
+        i{
+            margin: 5vw 3vw 0vw 1vw;
+            color: gray;
+
+            @media (min-width: 1000px){
+                margin: 40px 3vw 0vw 10px;
+            }
+        }
+        .fas.fa-store{
+            color: $primary;
+        }
+        p{
+            margin: 5vw 0vw 4vw 0vw;
+            @media (min-width: 1000px){
+                margin: 40px 0vw 15px 0vw;
+            } 
+        }
+    }
+    
+}

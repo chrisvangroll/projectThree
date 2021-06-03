@@ -115,6 +115,12 @@ body {
   font-family: roboto;
   font-size: 4vw;
 }
+
+span {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 4px;
+}
+
 body .spinContainer {
   padding-top: 29vh;
   height: 100vh;
@@ -135,6 +141,44 @@ body .spinContainer .spinner {
           animation: loading 1.5s linear infinite;
   margin: auto;
 }
+
+.homePageFooter {
+  position: relative;
+  bottom: 0px;
+  margin-top: 0;
+}
+
+footer {
+  background-color: #000000c4;
+  color: white;
+  padding: 15px 20px 10px 20px;
+  font-size: 0.7em;
+  margin-top: -76px;
+}
+footer .contact {
+  color: white;
+  text-decoration: none;
+}
+@media (min-width: 1200px) {
+  footer {
+    font-size: 20px;
+  }
+}
+footer p {
+  margin-top: 0px;
+  margin-bottom: 17px;
+}
+footer .footerLogo {
+  font-family: shrikhand;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+footer div p {
+  margin-left: 12px;
+}
+
 body .homePageContainer {
   -webkit-animation-name: PagefadeIn;
           animation-name: PagefadeIn;
@@ -156,6 +200,7 @@ body .homePageContainer header h1 {
   text-align: center;
   margin-bottom: 6px;
 }
+
 body .homePageContainer .sectionOne {
   background-color: #f3f3f3;
 }
@@ -163,7 +208,7 @@ body .homePageContainer .sectionOne .location {
   background-color: #e4e4e4;
   display: flex;
   justify-content: center;
-  box-shadow: inset 0px 20px 6px -17px #b5b5b5;
+  border-top: solid #80808036;
 }
 body .homePageContainer .sectionOne .location i {
   margin: 4vw 4vw 0vw 0vw;
@@ -213,6 +258,7 @@ body .homePageContainer .sectionOne .discover button:hover {
     margin-top: 65px;
   }
 }
+
 body .homePageContainer .sectionTwo h2 {
   margin-left: 3vw;
 }
@@ -271,6 +317,7 @@ body .homePageContainer .sectionTwo div p {
     margin: 40px 0vw 15px 0vw;
   }
 }
+
 body .homePageContainer .sectionThree {
   background-color: #f3f3f3;
   padding-bottom: 15px;
@@ -482,43 +529,45 @@ body .homePageContainer .sectionThree .restaurantCard .restaurantInfo p {
     margin-bottom: 0px;
   }
 }
-body .container {
+
+.container {
   max-width: 1000px;
   margin: auto;
   position: relative;
 }
 @media (min-width: 1000px) {
-  body .container {
+  .container {
     font-size: 30px;
   }
 }
-body .container header {
+.container header {
   font-family: shrikhand;
 }
-body .container header .fas.fa-arrow-left {
+.container header .fas.fa-arrow-left {
   font-size: 165%;
   position: absolute;
   top: 9px;
   left: 30px;
   color: black;
 }
-body .container header h1 {
+.container header h1 {
   text-align: center;
   margin-bottom: 6px;
 }
-body .container header .pic {
+.container header .pic {
   width: 100%;
 }
-body .container main {
+.container main {
   background-color: #f3f3f3;
   border-radius: 50px 50px 0px 0px;
   position: relative;
+  bottom: 76px;
 }
-body .container main .restaurantName {
+.container main .restaurantName {
   display: flex;
   justify-content: space-between;
 }
-body .container main .restaurantName .iconContainer {
+.container main .restaurantName .iconContainer {
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -526,12 +575,12 @@ body .container main .restaurantName .iconContainer {
   right: 3vw;
 }
 @media (min-width: 1000px) {
-  body .container main .restaurantName .iconContainer {
+  .container main .restaurantName .iconContainer {
     bottom: 33px;
     right: 102px;
   }
 }
-body .container main .restaurantName .iconContainer .fas.fa-heart {
+.container main .restaurantName .iconContainer .fas.fa-heart {
   align-self: flex-end;
   font-size: 9vw;
   margin-right: 5vw;
@@ -545,13 +594,13 @@ body .container main .restaurantName .iconContainer .fas.fa-heart {
   cursor: pointer;
 }
 @media (min-width: 1000px) {
-  body .container main .restaurantName .iconContainer .fas.fa-heart {
+  .container main .restaurantName .iconContainer .fas.fa-heart {
     align-self: flex-end;
     font-size: 90px;
     margin-right: 10px;
   }
 }
-body .container main .restaurantName .iconContainer .fas.fa-heart:hover {
+.container main .restaurantName .iconContainer .fas.fa-heart:hover {
   -webkit-animation-name: hearts;
           animation-name: hearts;
   -webkit-animation-duration: 0.5s;
@@ -559,7 +608,7 @@ body .container main .restaurantName .iconContainer .fas.fa-heart:hover {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-body .container main .restaurantName .iconContainer .far.fa-heart {
+.container main .restaurantName .iconContainer .far.fa-heart {
   align-self: flex-end;
   font-size: 8vw;
   margin-right: 5.5vw;
@@ -567,7 +616,7 @@ body .container main .restaurantName .iconContainer .far.fa-heart {
   margin-bottom: 0.3vw;
 }
 @media (min-width: 1000px) {
-  body .container main .restaurantName .iconContainer .far.fa-heart {
+  .container main .restaurantName .iconContainer .far.fa-heart {
     align-self: flex-end;
     font-size: 83px;
     margin-right: 10px;
@@ -575,7 +624,7 @@ body .container main .restaurantName .iconContainer .far.fa-heart {
     margin-right: 14px;
   }
 }
-body .container main h2 {
+.container main h2 {
   font-family: shrikhand;
   font-size: 2em;
   position: relative;
@@ -583,12 +632,13 @@ body .container main h2 {
   left: 26px;
   margin-bottom: 50px;
 }
-body .container main h3 {
+.container main h3 {
   color: gray;
   margin-top: 10px;
   margin-left: 12px;
 }
-body .container main .menuContainer {
+
+body .container .menuContainer {
   background-color: white;
   display: flex;
   margin: auto;
@@ -603,26 +653,26 @@ body .container main .menuContainer {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
 }
-body .container main .menuContainer:nth-child(2) {
+body .container .menuContainer:nth-child(2) {
   -webkit-animation-name: menuAnimation;
           animation-name: menuAnimation;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
-body .container main .menuContainer:nth-child(3) {
+body .container .menuContainer:nth-child(3) {
   -webkit-animation-name: menuAnimation;
           animation-name: menuAnimation;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
 }
-body .container main .menuContainer:nth-child(4) {
+body .container .menuContainer:nth-child(4) {
   -webkit-animation-name: menuAnimation;
           animation-name: menuAnimation;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer {
+  body .container .menuContainer {
     padding-left: 22px;
     align-content: space-between;
     margin-bottom: 32px;
@@ -630,13 +680,13 @@ body .container main .menuContainer:nth-child(4) {
     height: 159px;
   }
 }
-body .container main .menuContainer .dishName {
+body .container .menuContainer .dishName {
   font-size: 1em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-body .container main .menuContainer .dishSubliner {
+body .container .menuContainer .dishSubliner {
   font-weight: 300;
   width: 68vw;
   overflow: hidden;
@@ -644,31 +694,31 @@ body .container main .menuContainer .dishSubliner {
   text-overflow: ellipsis;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer .dishSubliner {
+  body .container .menuContainer .dishSubliner {
     width: 764px;
   }
 }
-body .container main .menuContainer p {
+body .container .menuContainer p {
   margin: 0;
   padding-top: 2vw;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer p {
+  body .container .menuContainer p {
     padding-top: 26px;
   }
 }
-body .container main .menuContainer .price {
+body .container .menuContainer .price {
   height: 100%;
   align-self: flex-end;
   padding-top: 9vw;
   width: 10%;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer .price {
+  body .container .menuContainer .price {
     padding-top: 100px;
   }
 }
-body .container main .menuContainer .greenCheck {
+body .container .menuContainer .greenCheck {
   background-color: #99E2D0;
   text-align: center;
   transform: translateX(0px);
@@ -681,14 +731,14 @@ body .container main .menuContainer .greenCheck {
   left: 15vw;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer .greenCheck {
+  body .container .menuContainer .greenCheck {
     border-radius: 0 45px 45px 0;
     width: 160px;
     position: relative;
     left: 160px;
   }
 }
-body .container main .menuContainer .greenCheck .fas.fa-check {
+body .container .menuContainer .fas.fa-check {
   color: #99E2D0;
   background-color: white;
   color: #99E2D0;
@@ -698,56 +748,61 @@ body .container main .menuContainer .greenCheck .fas.fa-check {
   font-size: 3.5vw;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer .greenCheck .fas.fa-check {
+  body .container .menuContainer .fas.fa-check {
     padding: 10px;
     margin-top: 52px;
     font-size: 35px;
   }
 }
-body .container main .menuContainer:hover {
+body .container .menuContainer span {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 4px;
+}
+body .container .menuContainer:hover {
   cursor: pointer;
 }
-body .container main .menuContainer:hover .greenCheck {
+body .container .menuContainer:hover .greenCheck {
   width: 15vw;
   transform: translateX(-15vw);
   transition: transform 0.5s ease-in-out;
   overflow: hidden;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer:hover .greenCheck {
+  body .container .menuContainer:hover .greenCheck {
     width: 160px;
     transform: translateX(-160px);
   }
 }
-body .container main .menuContainer:hover .greenCheck .fas.fa-check {
+body .container .menuContainer:hover .greenCheck .fas.fa-check {
   display: inline-block;
   transform: rotate(360deg);
   transition: transform 400ms;
   transition-delay: 100ms;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer:hover .dishName {
+  body .container .menuContainer:hover .dishName {
     width: 493px;
   }
 }
-body .container main .menuContainer:hover .dishSubliner {
+body .container .menuContainer:hover .dishSubliner {
   width: 58vw;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer:hover .dishSubliner {
+  body .container .menuContainer:hover .dishSubliner {
     width: 493px;
   }
 }
-body .container main .menuContainer:hover .price {
+body .container .menuContainer:hover .price {
   position: relative;
   left: 3.5vw;
 }
 @media (min-width: 1000px) {
-  body .container main .menuContainer:hover .price {
+  body .container .menuContainer:hover .price {
     position: relative;
     left: 100px;
   }
 }
+
 body .container main .orderDiv {
   background-color: #f3f3f3;
   height: 115px;
@@ -775,42 +830,4 @@ body .container main .orderDiv button:hover {
     padding: 27px 70px;
     margin-top: 0px;
   }
-}
-body .container main span {
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 4px;
-}
-body .homePageFooter {
-  position: relative;
-  bottom: 0px;
-  margin-top: 0;
-}
-body footer {
-  background-color: #000000c4;
-  color: white;
-  padding: 15px 20px 10px 20px;
-  font-size: 0.7em;
-}
-body footer .contact {
-  color: white;
-  text-decoration: none;
-}
-@media (min-width: 1200px) {
-  body footer {
-    font-size: 20px;
-  }
-}
-body footer p {
-  margin-top: 0px;
-  margin-bottom: 17px;
-}
-body footer .footerLogo {
-  font-family: shrikhand;
-}
-body footer div {
-  display: flex;
-  flex-direction: row;
-}
-body footer div p {
-  margin-left: 12px;
 }/*# sourceMappingURL=styles.css.map */

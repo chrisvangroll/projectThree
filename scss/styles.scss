@@ -1,2 +1,13 @@
-@import "./utils/_variables";
-@import "./layout/_form";
+
+@import "utils/variables";
+@import "utils/animations";
+@import "components/body";
+@import "components/spinner";
+@import "components/footers";
+@import "components/home_page/homePage_container";
+@import "components/home_page/sectionOne";
+@import "components/home_page/sectionTwo";
+@import "components/home_page/sectionThree";
+@import "components/menu_page/mainContainer";
+@import "components/menu_page/menuContainer";
+@import "components/menu_page/orderDiv";
