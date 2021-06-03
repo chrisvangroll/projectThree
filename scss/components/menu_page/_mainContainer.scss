@@ -102,11 +102,26 @@
                 margin-bottom: 50px;
             }
 
+            .enchanted_plate{
+                font-size: 1.5em;
+                margin-bottom: 0;
+
+                @media (min-width: 1000px) {
+                    font-size: 63px;
+                    top: 21px;
+                }
+            }
+
             
             h3{
                 color:gray;
                 margin-top: 10px;
                 @include marginLeft();
+
+                span{
+                    border-bottom: 3px solid $tertiary;
+                    padding-bottom: 4px;
+                }
             }
         }
     }    

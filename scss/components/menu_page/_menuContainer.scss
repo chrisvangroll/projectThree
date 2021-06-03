@@ -28,6 +28,12 @@ body .container .menuContainer{
         animation-duration: 2s;
     }
 
+    &:nth-child(5){
+        animation-name: menuAnimation;
+        animation-duration: 2.5s;
+    }
+
+   
     @media(min-width: 1000px){
         padding-left: 22px;
         align-content: space-between;
