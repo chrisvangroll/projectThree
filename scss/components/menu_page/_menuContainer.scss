@@ -89,7 +89,6 @@ body .container .menuContainer{
             position: relative;
             left: 15vw;
             
-
             @media(min-width: 1000px){
                 border-radius: 0 45px 45px 0;
                 width: 160px;
@@ -97,6 +96,7 @@ body .container .menuContainer{
                 left: 160px;
                 }
         }
+        
         .fas.fa-check{
             color: $tertiary;
             background-color: white;
@@ -118,25 +118,17 @@ body .container .menuContainer{
             padding-bottom: 4px;
         }
         
-        
-
-
 &:hover{
     cursor: pointer;
 
         .greenCheck{
             width: 15vw;
-            // transform-origin: right 50%;
             transform: translateX(-15vw); 
             transition: transform .5s ease-in-out;
             overflow: hidden;
-
-            
-
             @media(min-width: 1000px){
                 width: 160px;
-                transform: translateX(-160px); 
-                
+                transform: translateX(-160px);   
             }
 
             .fas.fa-check{
@@ -146,11 +138,13 @@ body .container .menuContainer{
                 transition-delay: 100ms;
             }
         }
+
         .dishName{
             @media(min-width: 1000px){
                 width: 493px;
             }
         }
+
         .dishSubliner{
             width: 58vw;
 

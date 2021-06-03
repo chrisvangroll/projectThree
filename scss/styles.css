@@ -116,11 +116,6 @@ body {
   font-size: 4vw;
 }
 
-span {
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 4px;
-}
-
 body .spinContainer {
   padding-top: 29vh;
   height: 100vh;
