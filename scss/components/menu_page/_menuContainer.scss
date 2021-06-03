@@ -15,7 +15,6 @@ body .container .menuContainer{
 
     &:nth-child(2){
         animation-name: menuAnimation;
-        // animation-delay: 1s;
         animation-duration: 1s;
     }
 
@@ -27,7 +26,6 @@ body .container .menuContainer{
     &:nth-child(4){
         animation-name: menuAnimation;
         animation-duration: 2s;
-
     }
 
     @media(min-width: 1000px){
@@ -73,7 +71,7 @@ body .container .menuContainer{
             width: 10%;
 
             @media(min-width: 1000px){
-                padding-top: 100px;
+                padding-top: 92px;
             }
         }
     
@@ -96,7 +94,7 @@ body .container .menuContainer{
                 left: 160px;
                 }
         }
-        
+
         .fas.fa-check{
             color: $tertiary;
             background-color: white;
@@ -159,7 +157,7 @@ body .container .menuContainer{
 
             @media(min-width: 1000px){
             position: relative;
-            left: 100px;
+            left: 125px;
             }
         }
 

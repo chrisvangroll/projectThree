@@ -710,7 +710,7 @@ body .container .menuContainer .price {
 }
 @media (min-width: 1000px) {
   body .container .menuContainer .price {
-    padding-top: 100px;
+    padding-top: 92px;
   }
 }
 body .container .menuContainer .greenCheck {
@@ -794,7 +794,7 @@ body .container .menuContainer:hover .price {
 @media (min-width: 1000px) {
   body .container .menuContainer:hover .price {
     position: relative;
-    left: 100px;
+    left: 125px;
   }
 }
 
