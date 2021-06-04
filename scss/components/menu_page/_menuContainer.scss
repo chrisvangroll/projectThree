@@ -57,7 +57,7 @@ body .container .menuContainer{
             text-overflow: ellipsis;
 
             @media(min-width: 1000px){
-                width: 764px;
+                width: 842px; 
             }
         }
 
@@ -117,10 +117,7 @@ body .container .menuContainer{
             }
         }
 
-        span{
-            border-bottom: 3px solid $tertiary;
-            padding-bottom: 4px;
-        }
+      
         
 &:hover{
     cursor: pointer;

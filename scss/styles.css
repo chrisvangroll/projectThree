@@ -629,12 +629,17 @@ body .homePageContainer .sectionThree .restaurantCard .restaurantInfo p {
 }
 .container main .enchanted_plate {
   font-size: 1.5em;
-  margin-bottom: 0;
+  margin-bottom: 7vw;
+}
+@media (max-width: 750px) {
+  .container main .enchanted_plate {
+    margin-bottom: 47px;
+  }
 }
 @media (min-width: 1000px) {
   .container main .enchanted_plate {
     font-size: 63px;
-    top: 21px;
+    margin-bottom: 50px;
   }
 }
 .container main h3 {
@@ -710,7 +715,7 @@ body .container .menuContainer .dishSubliner {
 }
 @media (min-width: 1000px) {
   body .container .menuContainer .dishSubliner {
-    width: 764px;
+    width: 842px;
   }
 }
 body .container .menuContainer p {
@@ -768,10 +773,6 @@ body .container .menuContainer .fas.fa-check {
     margin-top: 52px;
     font-size: 35px;
   }
-}
-body .container .menuContainer span {
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 4px;
 }
 body .container .menuContainer:hover {
   cursor: pointer;

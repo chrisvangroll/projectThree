@@ -47,7 +47,7 @@
                         bottom: 33px;
                         right: 102px;   
                     }
-
+                    
                     .fas.fa-heart {
                         align-self: flex-end;
                         font-size: 9vw;
@@ -88,8 +88,9 @@
                         margin-right: 14px;
                         }
                     }
-
                 }
+
+                
 
             }
             
@@ -104,11 +105,15 @@
 
             .enchanted_plate{
                 font-size: 1.5em;
-                margin-bottom: 0;
+                margin-bottom: 7vw;
+
+                @media (max-width: 750px) {
+                    margin-bottom: 47px;
+                }
 
                 @media (min-width: 1000px) {
                     font-size: 63px;
-                    top: 21px;
+                   margin-bottom: 50px;
                 }
             }
 
