@@ -8,37 +8,45 @@ footer{
     background-color:#000000c4;
     color: white;
     padding: 15px 20px 10px 20px;
-    // position: relative;
-    // bottom: 75px;
     font-size: .7em;
     margin-top: -76px;
 
-    .contact{
-        color: white;
-        text-decoration: none;
-    }
-    
-    @media (min-width: 1200px){
-        font-size: 20px;
-    }
+    .footerContainer {
+        display:flex;
+        flex-direction: column;
 
-    p{
-        margin-top: 0px;
-        margin-bottom: 17px;
-    }
+        @media (min-width: 1000px) {
+            width: 1000px;
+            margin: auto;
+        }
 
-    .footerLogo{
-        font-family: $fontOne;
-    }
+        .contact{
+            color: white;
+            text-decoration: none;
+        }
 
-    div{
-        display: flex;
-        flex-direction: row;
+        @media (min-width: 1000px){
+            font-size: 20px;
+        }
 
         p{
-            margin-left: 12px;
+            margin-top: 0px;
+            margin-bottom: 17px;
         }
-    
+
+        .footerLogo{
+            font-family: $fontOne;
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+
+            p{
+                margin-left: 12px;
+            }
+        }
+
     }
 }
 

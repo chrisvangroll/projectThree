@@ -114,6 +114,7 @@ body {
   position: relative;
   font-family: roboto;
   font-size: 4vw;
+  margin: 0;
 }
 
 body .spinContainer {
@@ -150,27 +151,37 @@ footer {
   font-size: 0.7em;
   margin-top: -76px;
 }
-footer .contact {
+footer .footerContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  footer .footerContainer {
+    width: 1000px;
+    margin: auto;
+  }
+}
+footer .footerContainer .contact {
   color: white;
   text-decoration: none;
 }
-@media (min-width: 1200px) {
-  footer {
+@media (min-width: 1000px) {
+  footer .footerContainer {
     font-size: 20px;
   }
 }
-footer p {
+footer .footerContainer p {
   margin-top: 0px;
   margin-bottom: 17px;
 }
-footer .footerLogo {
+footer .footerContainer .footerLogo {
   font-family: shrikhand;
 }
-footer div {
+footer .footerContainer div {
   display: flex;
   flex-direction: row;
 }
-footer div p {
+footer .footerContainer div p {
   margin-left: 12px;
 }
 

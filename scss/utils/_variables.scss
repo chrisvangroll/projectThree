@@ -4,21 +4,3 @@ $tertiary: #99E2D0;
 $bkgroundcolor: #f3f3f3;
 $fontOne: shrikhand;
 $fontTwo: roboto;
-@mixin marginLeft{
-    margin-left: 12px;
-}
-@mixin buttonStyles{
-    background-image: linear-gradient($secondary, $primary);
-    border: none;
-    padding: 2.5vw;
-    border-radius: 5vw;
-    margin-top: 6vw;
-    color: white;
-    font-weight: 600;
-    font-size: .8em;
-    cursor: pointer;
-
-    &:hover{
-        opacity: .8;
-    }
-}
