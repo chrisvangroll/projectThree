@@ -301,6 +301,8 @@ body .homePageContainer .sectionTwo div .numbers {
 @media (min-width: 1000px) {
   body .homePageContainer .sectionTwo div .numbers {
     padding: 10px 20px;
+    bottom: 14px;
+    right: 28px;
   }
 }
 body .homePageContainer .sectionTwo div i {
