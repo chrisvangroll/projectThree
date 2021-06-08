@@ -1,17 +1,21 @@
-body .container main .orderDiv{
+body .container main  .orderDiv{
 background-color: $bkgroundcolor;
 height: 115px;
 display: flex;
 justify-content: center;
 
-    button{
-        @include buttonStyles;
-        padding: 2.5vw 8vw;
-        margin-top: 0vw;
-        
-        @media (min-width: 1000px){
-            padding: 27px 70px;
-            margin-top: 0px;
+    a{
+        text-decoration: none;
+    
+        .purpButton{
+            @include buttonStyles;
+            padding: 2.5vw 8vw;
+            margin-top: 0vw;
+            
+            @media (min-width: 1000px){
+                padding: 27px 70px;
+                margin-top: 0px;
+            }
         }
     }
 }

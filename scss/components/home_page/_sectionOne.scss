@@ -30,11 +30,16 @@ body .homePageContainer .sectionOne{
         p{
             margin: 0px;
         }
-        button{
+        .purpleButton{
             @include buttonStyles;
+            width: 40vw;
+            margin: auto;
+            margin-top: 5vw;
+
             @media (min-width: 1000px){
                 padding: 30px;
                 margin-top: 65px;
+                width: 300px;
             }
         }
         

@@ -244,24 +244,28 @@ body .homePageContainer .sectionOne .discover h2 {
 body .homePageContainer .sectionOne .discover p {
   margin: 0px;
 }
-body .homePageContainer .sectionOne .discover button {
+body .homePageContainer .sectionOne .discover .purpleButton {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border: none;
-  padding: 2.5vw;
+  padding: 3vw;
   border-radius: 5vw;
   margin-top: 6vw;
   color: white;
   font-weight: 600;
   font-size: 0.8em;
   cursor: pointer;
+  width: 40vw;
+  margin: auto;
+  margin-top: 5vw;
 }
-body .homePageContainer .sectionOne .discover button:hover {
+body .homePageContainer .sectionOne .discover .purpleButton:hover {
   opacity: 0.8;
 }
 @media (min-width: 1000px) {
-  body .homePageContainer .sectionOne .discover button {
+  body .homePageContainer .sectionOne .discover .purpleButton {
     padding: 30px;
     margin-top: 65px;
+    width: 300px;
   }
 }
 
@@ -838,10 +842,13 @@ body .container main .orderDiv {
   display: flex;
   justify-content: center;
 }
-body .container main .orderDiv button {
+body .container main .orderDiv a {
+  text-decoration: none;
+}
+body .container main .orderDiv a .purpButton {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border: none;
-  padding: 2.5vw;
+  padding: 3vw;
   border-radius: 5vw;
   margin-top: 6vw;
   color: white;
@@ -851,11 +858,11 @@ body .container main .orderDiv button {
   padding: 2.5vw 8vw;
   margin-top: 0vw;
 }
-body .container main .orderDiv button:hover {
+body .container main .orderDiv a .purpButton:hover {
   opacity: 0.8;
 }
 @media (min-width: 1000px) {
-  body .container main .orderDiv button {
+  body .container main .orderDiv a .purpButton {
     padding: 27px 70px;
     margin-top: 0px;
   }
